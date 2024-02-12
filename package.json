@@ -1,0 +1,11 @@
+{
+  "name": "moviein",
+  "version": "1.0.0",
+  "description": "movieIn",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch resources/stylesheet/style.scss:assets/css/style.min.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}
