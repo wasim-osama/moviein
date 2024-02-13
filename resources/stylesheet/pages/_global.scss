@@ -1,5 +1,44 @@
+:root{
+  --primary:#21474B;
+  --secondary:#2F4F4F;
+  --button: #FF6347;
+  --accents: #FFD700;
+  --gray: #C0C0C0;
+  --hover: #E97451;
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+.start-300p {
+  left: 300px!important;
+}
+.bg-background{
+  background-color: var(--primary);
+}
+.bg-accents{
+    background-color: var(--accents);
+}
+.text-accents{
+    color: var(--accents);
+}
+.bg-secondary-cus{
+  background-color: var(--secondary);
+}
+.border-gray{
+  border-color: var(--secondary);
+}
+.btn-theme{
+  background-color: var(--button);
+  border-color: var(--button);
+  color: #ffffff;
+  transition: all 400ms ease-in-out;
+  &:hover{
+    background-color: var(--hover);
+    border-color: var(--hover);
+  }
+}
+
