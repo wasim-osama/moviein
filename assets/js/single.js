@@ -5,9 +5,24 @@ let movieContainer = document.getElementById('movieContainer');
 
 function showSingleMovie(){
     let castHtml = '';
+    let genre = '';
+    for (let g = 0 ; g < Movie.genres.length; g++){
+        genre += `
+            <span class="badge bg-accents text-black-50 me-1">`+Movie.genres[g]+`</span>
+        `
+    }
+
+    let downloadTorBtn = '';
+    for (let d = 0; d < Movie.torrents.length; d++ ){
+
+        downloadTorBtn += `
+            <a href="https://www1.yts.nz`+Movie.torrents[d].url+`" class="btn btn-theme btn-group-lg me-2" target="_blank">Download `+Movie.torrents[d].quality+` <small></small></a>
+        `
+
+    }
+
     for (let c = 0 ; c < Movie.cast.length; c++){
 
-        console.log(Movie.cast[c]);
         if (c < 4){
             castHtml +=`
             <div class="col-sm-3 col-6 py-2">
@@ -31,6 +46,7 @@ function showSingleMovie(){
                     <div class="col-lg-6 offset-lg-2 col-md-8">
                         <div class="h1">` + Movie.title_long + `</div>
                         <p class="fw-light">` + Movie.description_intro.substring(0, 150) + `&nbsp;<a href="#" class="text-light fw-normal" id="readMore">Read more</a></p>
+                        <div class="py-2">`+genre+`</div>
                         <div class="fs-4 text-center fw-bold text-accents">Top Casts:
                             <div class="row">
                                 ` + castHtml + `
@@ -50,6 +66,7 @@ function showSingleMovie(){
                                 Release Year : `+Movie.year+`
                             </div>
                         </div>
+                        <div class="d-flex py-3 justify-content-center">`+downloadTorBtn+`</div>
                     </div>  
                 </div>
             </div>
