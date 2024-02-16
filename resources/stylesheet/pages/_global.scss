@@ -31,6 +31,9 @@
 .border-gray{
   border-color: var(--secondary);
 }
+.border-background{
+  border-color: var(--primary)!important;
+}
 .btn-theme{
   background-color: var(--button);
   border-color: var(--button);
@@ -41,4 +44,23 @@
     border-color: var(--hover);
   }
 }
+.text-secondary{
+  color: var(--secondary);
+}
 
+.active-cus{
+    background-color: var(--button);
+    border-color: var(--button);
+    color: #ffffff;
+  &:hover{
+    color: #ffffff;
+  }
+}
+.active-cus-hover{
+  transition: all 400ms ease-in-out;
+  &:hover{
+    background-color: var(--hover)!important;
+    border-color: var(--hover);
+    color: #ffffff;
+  }
+}
