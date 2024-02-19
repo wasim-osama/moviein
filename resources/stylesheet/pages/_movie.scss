@@ -2,5 +2,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  .download-btn{
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.custom-overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

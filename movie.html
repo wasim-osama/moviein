@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie DB</title>
     <!--owl-carousel-->
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <!--owl-carousel-->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!--Bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--LineAwesome-->
@@ -24,7 +26,7 @@
     <div class="nav-responsive d-block position-fixed w-100 z-3">
         <nav class="navbar navbar-expand-lg bg-background shadow-lg text-light">
             <div class="container">
-                <a class="navbar-brand text-light" href="#">MovieIn</a>
+                <a class="navbar-brand text-light" href="index.html">MovieIn</a>
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -119,13 +121,25 @@
     <!--nav ends here-->
     <!--main-view-page start here-->
     <section class="main-content-single bg-background pt-5" id="movieContainer">
-
+        <!--api goes here-->
     </section>
+    <section class="rel-movies">
+        <div class="w-100 py-3">
+            <div class="container">
+                <div class="h3 fw-bold fst-italic mb-3  border-start border-4 border-accents">&nbsp;Related Movies</div>
+                <div class="row" id="relatedMovieContainer">
+                    <!--Api-->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--main-view-page end here-->
 
 </section>
 <!--home page ends here-->
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link<!--bootstrap-->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <!--bootstrap-->
 <!--app js-->

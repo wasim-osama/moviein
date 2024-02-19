@@ -38,15 +38,15 @@ function showActionMovies(){
         <div class="card slider splide__slide bg-background" data-splide-interval="10000">
             <img src="https://www1.yts.nz/`+Movies[i].background_image_original+`" class="card-img w-100 h-100 opacity-50">
             <div class="card-img-overlay overlay-custom">
-                <img class="m-auto h-100" src="https://www1.yts.nz/`+Movies[i].medium_cover_image+`" alt="`+Movies[i].title_english+`">
+                <img class="m-auto h-100" src="https://www1.yts.nz/`+Movies[i].medium_cover_image+`" onerror="this.src'assets/img/poster.jpg';" ">
             </div>    
-            <div class="start-300p responsive-slider text-light card-img-overlay d-flex flex-column  justify-content-center">
+            <div class="start-300p responsive-slider text-light card-img-overlay d-flex flex-column  justify-content-center align-items-center" >
                 <h5 class="card-title fs-1">`+charLimit(Movies[i].title_english,30)+`</h5>
                 <p class="card-text">`+genre+`</p>
                 <p class="card-text">
                 <span class="text-accents fw-bold"><i class="las la-star"></i></span>
                 `+Movies[i].rating+`/10</p>
-                <a href="movie.html?movie_id=`+Movies[i].id+`" class="btn btn-theme">Download Now</a>
+                <a href="movie.html?movie_id=`+Movies[i].id+`" class="btn btn-theme btn-width">Download Now</a>
             </div>
          </div>
         `
@@ -78,7 +78,7 @@ function showPnMovies(){
                     <h6 class="card-title card-title-custom">`+charLimit(Movies[i].title_english, 18)+`</h6>
                     <p class="card-text">`+genre+`</p>
                     <p class="card-text"><span class="text-warning"><i class="las la-star"></i></span>`+Movies[i].rating+`/10</p>
-                    <a class="btn btn-theme">Download Now!</a>
+                    <a href="movie.html?movie_id=`+Movies[i].id+`" class="btn btn-theme">Download Now!</a>
                 </div>
             </div>
          </div>
@@ -106,7 +106,7 @@ function showPMovies(){
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h6 class="card-title fw-lighter h6">`+charLimit(Movies[i].title_english, 10)+`</h6>
+                        <a href="movie.html?movie_id=`+Movies[i].id+`" class="card-title fw-lighter h6 text-light text-decoration-none">`+charLimit(Movies[i].title_english, 10)+`</a>
                         <p class="card-text fw-lighter genre">`+genre+`</p>
                         <p class="card-text fw-lighter small"><span class="text-accents"><i class="las la-star"></i></span>`+Movies[i].rating+`/10</p>
                     </div>
@@ -143,7 +143,7 @@ function showNewMovies(){
                         <h5 class="card-title">`+Movies[i].title_english+`</h5>
                         <p class="card-text" id="genre">`+genre+`</p>
                         <p class="card-text"><span class="text-accents"><i class="las la-star"></i></span>`+Movies[i].rating+`/10</p>
-                         <a class="btn btn-theme">Download Now!</a>
+                        <a href="movie.html?movie_id=`+ Movies[i].id +`" class="btn btn-theme">Download Now!</a>
                     </div>
                 </div>
             </div>
