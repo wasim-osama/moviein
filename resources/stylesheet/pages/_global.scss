@@ -17,53 +17,59 @@
   left: 300px!important;
 }
 .bg-background{
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
 }
 .bg-accents{
-    background-color: var(--accents);
+    background-color: var(--accents) !important;
 }
 .text-accents{
-    color: var(--accents);
+    color: var(--accents) !important;
 }
 .bg-secondary-cus{
-  background-color: var(--secondary);
+  background-color: var(--secondary) !important;
 }
 .border-gray{
-  border-color: var(--secondary);
+  border-color: var(--secondary) !important;
 }
 .border-accents{
-  border-color: var(--accents);
+  border-color: var(--accents)!important;
 }
 .border-background{
   border-color: var(--primary)!important;
 }
 .btn-theme{
-  background-color: var(--button);
-  border-color: var(--button);
-  color: #ffffff;
-  transition: all 400ms ease-in-out;
+  background-color: var(--button) !important;
+  border-color: var(--button) !important;
+  color: #ffffff !important;
+  transition: all 400ms ease-in-out !important;
   &:hover{
-    background-color: var(--hover);
-    border-color: var(--hover);
+    background-color: var(--hover) !important;
+    border-color: var(--hover) !important;
   }
 }
 .text-secondary{
-  color: var(--secondary);
+  color: var(--secondary) !important;
 }
 
 .active-cus{
-    background-color: var(--button);
-    border-color: var(--button);
+    background-color: var(--button) !important;
+    border-color: var(--button) !important;
     color: #ffffff;
   &:hover{
     color: #ffffff;
   }
 }
 .active-cus-hover{
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out !important;
   &:hover{
     background-color: var(--hover)!important;
-    border-color: var(--hover);
-    color: #ffffff;
+    border-color: var(--hover) !important;
+    color: #ffffff !important;
   }
+}
+.bg-trans-black{
+  background-color: rgb(0 ,0 , 0 , 0.5) !important;
+}
+.w-90{
+  width: 90%!important;
 }

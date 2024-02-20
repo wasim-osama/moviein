@@ -1,0 +1,12 @@
+.browse-hov-img{
+  .browse-hover{
+    transition: 0.5s all ease-in-out;
+  }
+    &:hover {
+      .browse-hover{
+        opacity: 1!important;
+        transition: 0.5s all ease-in-out;
+        z-index: 1;
+      }
+    }
+}
