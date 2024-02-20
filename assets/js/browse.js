@@ -1,12 +1,12 @@
-let browseMovieContainer = document.getElementById(' browseMovieContainer'),
-    singleBrowseContainer = document.getElementById(' singleBrowseContainer'),
+let browseMovieContainer = document.getElementById('browseMovieContainer'),
+    singleBrowseContainer = document.getElementById('singleBrowseContainer'),
     browseMovie = [];
 
 
 function showBrowseMovies(){
     let HTML = '';
     for(i = 0; i < browseMovie.length; i++){
-        HTML = `
+        HTML += `
             <div class="col-lg-3 col-md-4 col-sm-6" >
                 <div>
                     <div class="position-relative browse-hov-img">

@@ -184,18 +184,16 @@
                     <div class="h3 text-center text-light py-3">
                         Let's Deep dive in the movie dimension.
                     </div>
-                    <div class="row position-relative">
-                        <div class="col-lg-6 col-sm-8 offset-lg-3 offset-sm-2">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8 offset-lg-3 offset-sm-2 position-relative">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control bg-dark-subtle z-2" placeholder="Explore Movies" id="searchbar" >
-                                <button class="btn btn-outline-secondary" type="button"><i
-                                        class="las la-search"></i>
-                                </button>
+                                <input type="text" class="form-control bg-dark-subtle z-2" placeholder="Explore Movies" id="searchbarRes" >
+                            </div>
+                            <div class="w-100 position-absolute z-2 custom-search-content custom-search-content-res left-0" id="searchContentRes">
+                                <!--search api-->
                             </div>
                         </div>
-                        <div class="col-lg-6 col-sm-8 offset-lg-3 offset-sm-2 position-absolute z-2" id="searchContent" style="bottom: -253px;">
-                            <!--search api-->
-                        </div>
+
                     </div>
                 </div>
                 <!--upcoming slider starts here-->
@@ -243,10 +241,11 @@
         <!--side popular bar start-->
         <section class="sidebar sidebar-right bg-background position-fixed top-0 end-0">
                 <div class="d-flex flex-column flex-shrink-0 p-3 border-start  border-secondary vh-100">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control bg-dark-subtle" placeholder="Explore Movies">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                class="las la-search"></i></button>
+                    <div class="input-group mb-3 position-relative">
+                        <input type="text" class="form-control bg-dark-subtle" placeholder="Explore Movies" id="searchbar">
+                        <div class="w-100 position-absolute z-2 custom-search-content left-0" id="searchContent">
+                            <!--search api-->
+                        </div>
                     </div>
 
                     <hr>
@@ -275,6 +274,9 @@
 <!--app js-->
 <script src="assets/js/app.js"></script>
 <script src="assets/js/search.js"></script>
+<!--
+<script src="assets/js/searchRes.js"></script>
+-->
 <!--app js-->
 
 </body>
