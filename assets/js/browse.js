@@ -1,7 +1,8 @@
 let browseMovieContainer = document.getElementById('browseMovieContainer'),
     singleBrowseContainer = document.getElementById('singleBrowseContainer'),
     browseMovie = [],
-    browseMovieData = [];
+    browseMovieData = [],
+    PageNo = 0;
 
 
 function showBrowseMovies(){
@@ -64,9 +65,7 @@ function getBrowseMovie(){
     })
 }
 function pagination(){
-
     let paginationCount = browseMovieData.movie_count / browseMovieData.limit;
-    console.log(paginationCount);
     let currentPage = browseMovieData.page_number;
     let skip =  browseMovieData.limit * (currentPage - 1);
     let paginationUrl = 'http://moviein.test/api/list_movies.php?skip='+skip;
@@ -89,5 +88,7 @@ function currentPageClick(){
 
 
 window.onload = function(){
+    const searchParams = new URLSearchParams(window.location.search);
+    PageNo = searchParams.get('page') == null ? 1 : searchParams.get('page');
     getBrowseMovie();
 }
