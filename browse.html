@@ -136,7 +136,7 @@
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
                                 aria-label="Default select example" id="quality">
-                            <option selected>Open this select menu</option>
+                            <option disabled selected value>Open this select menu</option>
                             <option value="2600p">4k</option>
                             <option value="1080p">1080p</option>
                             <option value="720p">720p</option>
@@ -148,7 +148,7 @@
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
                                 aria-label="Default select example" id="genre">
-                            <option selected>Open this select menu</option>
+                            <option disabled selected value>Open this select menu</option>
                             <option value="romantic">Romantic</option>
                             <option value="horror">Horror</option>
                             <option value="adventure">Adventure</option>
@@ -160,7 +160,7 @@
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
                                 aria-label="Default select example" id="year">
-                            <option selected>Select Specific year</option>
+                            <option disabled selected value>Select Specific year</option>
                             <option value="2020">2020</option>
                             <option value="2019">2019</option>
                             <option value="2018">2018</option>
@@ -172,7 +172,7 @@
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
                                 aria-label="Default select example" id="orderBy">
-                            <option selected>Open this select menu</option>
+                            <option disabled selected value>Open this select menu</option>
                             <option value="desc">desc</option>
                             <option value="asc">asc</option>
                             <option value="3">Three</option>
@@ -194,9 +194,9 @@
                     </div>
                     <div class="col-lg-2 col-md-1">
                         <div class="h4">
-                            <span class="text-accents" id="ratingsShow"><i class="las la-star"></i></span>
-                            8
-                            <span class="small fw-lighter text-secondary">/10</span>
+                            <span class="text-accents"><i class="las la-star"></i></span>
+                            <span  id="ratingShow">5</span>
+                            <span class="small fw-lighter">/10</span>
                         </div>
                     </div>
                 </div>
@@ -206,14 +206,14 @@
     </section>
     <!--filter-section end here-->
     <!--movie-view-page-starts-here-->
-    <div class="container" id="FilteredMovies">
-        <div class="w-100 pt-3">
-            <div class="h4 text-center">MovieIn With {{movie.name}} {{(order by desc)}}</div>
-        </div>
+        <div class="container" id="browseFullPage">
+            <div class="w-100 pt-3">
+                <div class="h4 text-center">Browse The Movie Dimension</div>
+            </div>
         <!--pagination-starts-here-->
         <div class="px-4 d-flex justify-content-center" id="browseMovieContainer">
             <nav>
-                <ul class="pagination py-2">
+                <ul class="pagination py-2" id="paginationContent">
                     <li class="page-item">
                         <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
                             <i class="las la-angle-double-left"></i>
@@ -244,38 +244,44 @@
         <div class="row" id="singleBrowseContainer">
             <!--Api goes here-->
         </div>
+        <div class="row" id="singleFilteredContainer">
+            <!--Api goes here-->
+        </div>
+        <!--pagination-starts-here-->
+        <div class="px-4 d-flex justify-content-center">
+            <nav>
+                <ul class="pagination py-2">
+                    <li class="page-item">
+                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
+                            <i class="las la-angle-double-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
+                            1
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
+                            2
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
+                            <i class="las la-angle-double-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--pagination-ends-here-->
     </div>
-    <!--pagination-starts-here-->
-    <div class="px-4 d-flex justify-content-center">
-        <nav>
-            <ul class="pagination py-2">
-                <li class="page-item">
-                    <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                        <i class="las la-angle-double-left"></i>
-                    </a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                        1
-                    </a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                        2
-                    </a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">3</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                        <i class="las la-angle-double-right"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div id="BrowseErrorMessage">
+
     </div>
-    <!--pagination-ends-here-->
     </div>
     <!--movie-view-page-ends-here-->
 </section>

@@ -1,11 +1,21 @@
 let browseMovieContainer = document.getElementById('browseMovieContainer'),
     singleBrowseContainer = document.getElementById('singleBrowseContainer'),
-    browseMovie = [];
+    browseMovie = [],
+    browseMovieData = [];
 
 
 function showBrowseMovies(){
     let HTML = '';
+
     for(let i = 0; i < browseMovie.length; i++){
+        let genre = '';
+        for (let g = 0; g < browseMovie[i].genres.length; g++){
+            if(g < 2){
+                genre +=`
+                    <div style="line-height:10px;" >`+browseMovie[i].genres[g]+`</div><br>
+            `
+            }
+        }
         HTML += `
             <div class="col-lg-3 col-md-4 col-sm-6" >
                 <div>
@@ -19,8 +29,7 @@ function showBrowseMovies(){
                                         `+browseMovie[i].rating+`
                                     </div>
                                     <div class="fs-4 fw-light py-2">
-                                        <div class="">`+browseMovie[i].genres[0]+`</div>
-                                        <div class="">`+browseMovie[i].genres[1]+`</div>
+                                        `+genre+`
                                     </div>
                                     <a href="movie.html?movie_id=`+browseMovie[i].id+`" class="btn btn-theme mt-2" target="_blank">View Now</a>
                                 </div>
@@ -36,8 +45,8 @@ function showBrowseMovies(){
             </div>
         `
     }
-    console.log(singleBrowseContainer);
     singleBrowseContainer.innerHTML = HTML;
+
 }
 
 function getBrowseMovie(){
@@ -48,9 +57,34 @@ function getBrowseMovie(){
         return res.json();
     }).then(res => {
         browseMovie = res.data.movies;
-        console.log(browseMovie);
+        browseMovieData = res.data;
+        console.log(res);
         showBrowseMovies();
+        pagination();
     })
+}
+function pagination(){
+
+    let paginationCount = browseMovieData.movie_count / browseMovieData.limit;
+    console.log(paginationCount);
+    let currentPage = browseMovieData.page_number;
+    let skip =  browseMovieData.limit * (currentPage - 1);
+    let paginationUrl = 'http://moviein.test/api/list_movies.php?skip='+skip;
+    let paginationContent = document.getElementById('paginationContent');
+    let html = ''
+    for(let p= 1; p < Math.min(paginationCount,8); p++){
+            html += `
+            <li class="page-item">
+                <a onclick="" class="page-link bg-dark text-light border-accents px-4 py-2">
+                    `+p+`
+                </a>
+            </li>
+            `;
+    }
+    paginationContent.innerHTML = html;
+}
+function currentPageClick(){
+
 }
 
 
