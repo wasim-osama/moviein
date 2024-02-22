@@ -83,13 +83,13 @@ function showSingleMovie(){
             <div class="h3 fw-bold fst-italic mb-3  border-start border-4 border-accents">&nbsp;Quality Check</div>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="https://www1.yts.nz/`+Movie.medium_screenshot_image1+`" alt="" data-fancybox="gallery" class="w-100 border-2 border-gray border rounded-1">
+                        <img src="https://www1.yts.nz/`+Movie.large_screenshot_image1+`" alt="" data-fancybox="gallery" class="w-100 border-2 border-gray border rounded-1">
                     </div>
                     <div class="col-md-4">
-                        <img src="https://www1.yts.nz/`+Movie.medium_screenshot_image2+`" alt="" data-fancybox="gallery" class="w-100 border-2 border-gray border rounded-1">
+                        <img src="https://www1.yts.nz/`+Movie.large_screenshot_image2+`" alt="" data-fancybox="gallery" class="w-100 border-2 border-gray border rounded-1">
                     </div>
                     <div class="col-md-4">
-                        <img src="https://www1.yts.nz/`+Movie.medium_screenshot_image3+`" alt="" data-fancybox="gallery" class="w-100 border-2 border-gray border rounded-1">
+                        <img src="https://www1.yts.nz/`+Movie.large_screenshot_image3+`" alt="" data-fancybox="gallery" class="w-100 border-2 border-gray border rounded-1">
                     </div>
                 </div>                
             </div>

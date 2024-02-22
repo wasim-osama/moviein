@@ -7,7 +7,7 @@ searchbarRes.addEventListener('keyup',() =>{
         if(searchbarRes.value.length > 0){
             clearTimeout(searchTime);
             searchTimeRes = setTimeout(()=>{
-                getSearchMovies();
+                getSearchMoviesRes();
 
             },800);
         }else{
@@ -15,7 +15,7 @@ searchbarRes.addEventListener('keyup',() =>{
         }
 });
 
-function showSearchMovies(){
+function showSearchMoviesRes(){
     let html ='';
     for (i = 0; i < searchMovieRes.length; i++){
         if (i < 4){
@@ -34,7 +34,7 @@ function showSearchMovies(){
     }
     searchContentRes.innerHTML = html;
 }
-function noResSearchMovies(){
+function noResSearchMoviesRes(){
     let html ='';
     html +=`
         <div class="row bg-background shadow-sm d-flex align-items-center py-2 border-bottom border-accents">
@@ -48,7 +48,7 @@ function noResSearchMovies(){
         `
     searchContentRes.innerHTML = html;
 }
-function getSearchMovies(){
+function getSearchMoviesRes(){
     let q  = searchbarRes.value.toLowerCase();
     fetch('http://moviein.test/api/list_movies.php?sort_by=rating&order_by=desc&query_term='+q).then(res => {
         if (!res.ok){
@@ -59,9 +59,9 @@ function getSearchMovies(){
         if (res?.data?.movies !== undefined && res?.data?.movies.length){
             searchMovieRes = res?.data?.movies;
             console.log(res);
-            showSearchMovies();
+            showSearchMoviesRes();
         }else{
-            noResSearchMovies();
+            noResSearchMoviesRes();
         }
 
     })

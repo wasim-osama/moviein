@@ -5,7 +5,7 @@ let browseMovieContainer = document.getElementById('browseMovieContainer'),
 
 function showBrowseMovies(){
     let HTML = '';
-    for(i = 0; i < browseMovie.length; i++){
+    for(let i = 0; i < browseMovie.length; i++){
         HTML += `
             <div class="col-lg-3 col-md-4 col-sm-6" >
                 <div>
@@ -22,15 +22,15 @@ function showBrowseMovies(){
                                         <div class="">`+browseMovie[i].genres[0]+`</div>
                                         <div class="">`+browseMovie[i].genres[1]+`</div>
                                     </div>
-                                    <a href="" class="btn btn-theme mt-2">View Now</a>
+                                    <a href="movie.html?movie_id=`+browseMovie[i].id+`" class="btn btn-theme mt-2" target="_blank">View Now</a>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <div class="py-2">
-                        <h5 class="card-title">Movie name</h5>
-                        <p class="card-text">2024</p>
+                        <a href="movie.html?movie_id=`+browseMovie[i].id+`" class="card-title h5 text-decoration-none" target="_blank">`+browseMovie[i].title_english.substring(0,40)+`...</a>
+                        <p class="card-text">`+browseMovie[i].year+`</p>
                     </div>
                 </div>
             </div>

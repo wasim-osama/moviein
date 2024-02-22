@@ -16,7 +16,7 @@ searchbar.addEventListener('keyup',() =>{
 
 function showSearchMovies(){
     let html ='';
-    for (i = 0; i < searchMovie.length; i++){
+    for (let i = 0; i < searchMovie.length; i++){
         if (i < 4){
             html +=`
         <div class="row bg-background shadow-sm d-flex align-items-center py-2 border-bottom border-accents">

@@ -51,7 +51,7 @@
                                     <hr class="dropdown-divider bg-light">
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                                    <a href="browse.html" class="nav-link text-white active-cus-hover rounded-0">
                                         <i class="las la-fire-alt"></i>
                                         Browse Movie
                                     </a>
@@ -87,11 +87,11 @@
                         </li>
                     </ul>
                     <div class="navbar-nav m-auto mb-2 mb-lg-0 w-50">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-dark-subtle" placeholder="Explore Movies">
-                            <button class="btn btn-outline-secondary" type="button"><i
-                                    class="las la-search"></i>
-                            </button>
+                        <div class="input-group mb-3 position-relative">
+                            <input type="text" class="form-control bg-dark-subtle" placeholder="Explore Movies" id="searchbar">
+                            <div class="w-100 position-absolute z-2 custom-search-content left-0" id="searchContent">
+                                <!--search api-->
+                            </div>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -123,9 +123,9 @@
                 <div class="input-group mb-3">
                     <input type="text" class="form-control bg-dark text-light border-accents border-end-0"
                            placeholder="Recipient's username" aria-label="Recipient's username"
-                           aria-describedby="basic-addon2" id="browse-input">
-                    <span class="input-group-text bg-black border-accents border-start-0"><i
-                            class="las la-search text-light"></i></span>
+                           aria-describedby="basic-addon2" id="browseInput">
+                    <button class="input-group-text bg-black border-accents border-start-0 text-decoration-none" id="searchBtn"><i
+                            class="las la-search text-light"></i></button>
                 </div>
                 <!--Search-bar end here-->
                 <!--filter-custom starts here-->
@@ -135,11 +135,11 @@
                             Quality
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
-                                aria-label="Default select example">
+                                aria-label="Default select example" id="quality">
                             <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="2600p">4k</option>
+                            <option value="1080p">1080p</option>
+                            <option value="720p">720p</option>
                         </select>
                     </div>
                     <div class="col-sm-3 col-6">
@@ -147,11 +147,11 @@
                             Genre
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
-                                aria-label="Default select example">
+                                aria-label="Default select example" id="genre">
                             <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="romantic">Romantic</option>
+                            <option value="horror">Horror</option>
+                            <option value="adventure">Adventure</option>
                         </select>
                     </div>
                     <div class="col-sm-3 col-6">
@@ -159,11 +159,11 @@
                             Year
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
-                                aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                                aria-label="Default select example" id="year">
+                            <option selected>Select Specific year</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
                         </select>
                     </div>
                     <div class="col-sm-3 col-6">
@@ -171,10 +171,10 @@
                             Order By
                         </div>
                         <select class="form-select bg-dark text-light border-accents"
-                                aria-label="Default select example">
+                                aria-label="Default select example" id="orderBy">
                             <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
+                            <option value="desc">desc</option>
+                            <option value="asc">asc</option>
                             <option value="3">Three</option>
                         </select>
                     </div>
@@ -188,13 +188,13 @@
                     <div class="col-lg-8 col-md-10">
                         <div class="input-group align-items-center">
                             <div class="fw-light fs-4">0</div>
-                            <input type="range" class="form-range px-2 w-90" min="0" max="10">
+                            <input type="range" class="form-range px-2 w-90" min="0" max="10" id="ratings">
                             <div class="fw-light fs-4">10</div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-1">
                         <div class="h4">
-                            <span class="text-accents"><i class="las la-star"></i></span>
+                            <span class="text-accents" id="ratingsShow"><i class="las la-star"></i></span>
                             8
                             <span class="small fw-lighter text-secondary">/10</span>
                         </div>
@@ -206,7 +206,7 @@
     </section>
     <!--filter-section end here-->
     <!--movie-view-page-starts-here-->
-    <div class="container">
+    <div class="container" id="FilteredMovies">
         <div class="w-100 pt-3">
             <div class="h4 text-center">MovieIn With {{movie.name}} {{(order by desc)}}</div>
         </div>
@@ -242,7 +242,7 @@
         </div>
         <!--pagination-ends-here-->
         <div class="row" id="singleBrowseContainer">
-
+            <!--Api goes here-->
         </div>
     </div>
     <!--pagination-starts-here-->
@@ -285,6 +285,8 @@
 <!--bootstrap-->
 <!--app js-->
 <script src="assets/js/browse.js"></script>
+<script src="assets/js/FilterSearch.js"></script>
+<script src="assets/js/search.js"></script>
 <!--app js-->
 
 </body>
