@@ -106,7 +106,7 @@ function showRelatedMovies(){
             <div class="card bg-dark text-white">
             <img src="https://www1.yts.nz/`+relatedMovie[i].medium_cover_image+`"  class="card-img"  onerror="this.src='assets/img/poster.jpg';" style="height: 456px">
             <div class="custom-overlay py-3 bg-secondary-cus">
-                <h5 class="card-title">`+relatedMovie[i].title_english.substring(0,15)+`</h5>
+                <h5 class="card-title">`+relatedMovie[i].title_english.substring(0,15)+`...</h5>
                 <p class="card-text fs-6"><i class="las la-star text-accents"></i>`+relatedMovie[i].rating+`/10</p>
                 <p class="card-text fs-6">`+relatedMovie[i].year+`</p>
                 <a href="movie.html?movie_id=`+ relatedMovie[i].id +`" class="btn btn-theme" target="_blank">View</a>

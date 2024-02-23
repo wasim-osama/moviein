@@ -188,14 +188,14 @@
                     <div class="col-lg-8 col-md-10">
                         <div class="input-group align-items-center">
                             <div class="fw-light fs-4">0</div>
-                            <input type="range" class="form-range px-2 w-90" min="0" max="10" id="ratings">
+                            <input type="range" class="form-range px-2 w-90" min="0" max="10" id="ratings" value="0">
                             <div class="fw-light fs-4">10</div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-1">
                         <div class="h4">
                             <span class="text-accents"><i class="las la-star"></i></span>
-                            <span  id="ratingShow">5</span>
+                            <span  id="ratingShow">0</span>
                             <span class="small fw-lighter">/10</span>
                         </div>
                     </div>
@@ -214,29 +214,7 @@
         <div class="px-4 d-flex justify-content-center" id="browseMovieContainer">
             <nav>
                 <ul class="pagination py-2" id="paginationContent">
-<!--                    <li class="page-item">-->
-<!--                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">-->
-<!--                            <i class="las la-angle-double-left"></i>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="page-item">-->
-<!--                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">-->
-<!--                            1-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="page-item">-->
-<!--                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">-->
-<!--                            2-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="page-item">-->
-<!--                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">3</a>-->
-<!--                    </li>-->
-<!--                    <li class="page-item">-->
-<!--                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">-->
-<!--                            <i class="las la-angle-double-right"></i>-->
-<!--                        </a>-->
-<!--                    </li>-->
+                    <!--data fro api-->
                 </ul>
             </nav>
         </div>
@@ -244,36 +222,11 @@
         <div class="row" id="singleBrowseContainer">
             <!--Api goes here-->
         </div>
-        <div class="row" id="singleFilteredContainer">
-            <!--Api goes here-->
-        </div>
         <!--pagination-starts-here-->
         <div class="px-4 d-flex justify-content-center">
             <nav>
-                <ul class="pagination py-2">
-                    <li class="page-item">
-                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                            <i class="las la-angle-double-left"></i>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                            1
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                            2
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a href="#" class="page-link bg-dark text-light border-accents px-4 py-2">
-                            <i class="las la-angle-double-right"></i>
-                        </a>
-                    </li>
+                <ul class="pagination py-2" id="paginationContent2">
+                    <!--data from api-->
                 </ul>
             </nav>
         </div>
