@@ -1,5 +1,5 @@
 :root{
-  --primary:#21474B;
+  --primary:#000B18;
   --secondary:#2F4F4F;
   --button: #FF6347;
   --accents: #FFD700;
@@ -11,6 +11,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  background-color: var(--primary) !important;
 }
 
 .start-300p {

@@ -3,12 +3,12 @@
   max-width: 1650px;
 }
 .homepage-bg{
-  background-image: url("../img/home-page-bg.jpg");
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-height: 800px;
 }
 .rating-info-zone{
   width: 100%;
@@ -22,6 +22,7 @@
   word-spacing: 20px;
   letter-spacing: 15px;
 }
+
 .paragraph{
   line-height: 30px;
   font-weight: 500;

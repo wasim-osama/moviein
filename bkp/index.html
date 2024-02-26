@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie DB</title>
+    <!--owl-carousel-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <!--owl-carousel-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--LineAwesome-->
+    <link rel="stylesheet"
+          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!--Custom-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="bg-background">
+<!--home page starts here-->
+<section class="w-100 bg-background text-light">
+        <!--sidebar-left starts here-->
+        <section class="sidebar sidebar-left bg-background position-fixed top-0">
+            <div class="d-flex flex-column flex-shrink-0 p-3 border-end border-secondary vh-100">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-4 font-monospace">MovieIn</span>
+                </a>
+                <hr>
+                <div class="fs-4">MENU</div>
+                <ul class="nav nav-pills flex-column mb-2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active-cus rounded-0" aria-current="page">
+                            <i class="las la-house-damage"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                            <i class="las la-user-friends"></i>
+                            Community
+                        </a>
+                    </li>
+                    <li>
+                        <a href="browse.html" class="nav-link text-white active-cus-hover rounded-0">
+                            <i class="las la-fire-alt"></i>
+                            Browse
+                        </a>
+                    </li>
+                </ul>
+                <div class="fs-4">Library</div>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                            <i class="las la-play-circle"></i>
+                            Watchlist
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                            <i class="las la-bookmark"></i>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                            <i class="lar la-heart"></i>
+                            Favorites
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>mdo</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-background text-light text-small shadow border-gray">
+                        <li><a class="dropdown-item text-light" href="#">Settings</a></li>
+                        <li><a class="dropdown-item text-light" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-light" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="nav-responsive position-fixed w-100 z-3">
+        <nav class="navbar navbar-expand-lg bg-background border-bottom border-gray shadow-sm text-light">
+            <div class="container">
+                <a class="navbar-brand text-light" href="index.html">MovieIn</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu bg-background dropdown-menu-dark">
+                                <li>
+                                    <a href="#" class="nav-link active-cus rounded-0" aria-current="page">
+                                        <i class="las la-house-damage"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                                        <i class="las la-user-friends"></i>
+                                        Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider bg-light">
+                                </li>
+                                <li>
+                                    <a href="browse.html" class="nav-link text-white active-cus-hover rounded-0">
+                                        <i class="las la-fire-alt"></i>
+                                        Browse
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown text-light">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Library
+                            </a>
+                            <ul class="dropdown-menu bg-background dropdown-menu-dark">
+                                <li>
+                                    <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                                        <i class="las la-play-circle"></i>
+                                        Watchlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                                        <i class="las la-bookmark"></i>
+                                        Wishlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-white active-cus-hover rounded-0">
+                                        <i class="lar la-heart"></i>
+                                        Favorites
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                 class="rounded-circle me-2">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-background text-light text-small shadow border-gray">
+                            <li><a class="dropdown-item text-light" href="#">Settings</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider bg-light">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <!--side nav ends here-->
+        <!--main-view-page start here-->
+        <section class="middle-content bg-background">
+            <div class="container-fluid">
+                <div class="w-100 pb-2 search-responsive">
+                    <div class="h3 text-center text-light py-3">
+                        Let's Deep dive in the movie dimension.
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8 offset-lg-3 offset-sm-2 position-relative">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control bg-dark-subtle z-2" placeholder="Explore Movies" id="searchbarRes" >
+                            </div>
+                            <div class="w-100 position-absolute z-2 custom-search-content custom-search-content-res left-0" id="searchContentRes">
+                                <!--search api-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--upcoming slider starts here-->
+                <div class="w-100 py-3">
+                    <div class="h2 text-light">Action Jackson</div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="splide">
+                                <div class="splide__track">
+                                    <div class="splide__list" id="actionMovieContainer">
+                                        <!--data from api   -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--upcoming slider ends here-->
+                <!--Popular Right Now starts here-->
+                <div class="w-100 py-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="h2 text-light">Popular Right Now</div>
+                        <a href="allPnMovie.html" class="small text-light pointer-event">View More</a>
+                    </div>
+                    <div class="row" id="pnMovieContainer">
+                        <!--data from api-->
+                    </div>
+                </div>
+                <!--Popular Right Now ends here-->
+                <!--Hot new starts here-->
+                <div class="w-100 py-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="h2 text-light">Hot New</div>
+                        <a href="allnMovie.html" class="small text-light pointer-event">View More</a>
+                    </div>
+                    <div class="row" id="newMovieContainer">
+                        <!--data from api-->
+                    </div>
+                </div>
+                <!--Hot new starts here-->
+            </div>
+        </section>
+        <!--main-view-page end here-->
+        <!--side popular bar start-->
+        <section class="sidebar sidebar-right bg-background position-fixed top-0 end-0">
+                <div class="d-flex flex-column flex-shrink-0 p-3 border-start  border-secondary vh-100">
+                    <div class="input-group mb-3 position-relative">
+                        <input type="text" class="form-control bg-dark-subtle" placeholder="Explore Movies" id="searchbar">
+                        <div class="w-100 position-absolute z-2 custom-search-content left-0" id="searchContent">
+                            <!--search api-->
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="w-100 py-3">
+                        <div class="fs-4 pb-2">Popular</div>
+                        <div class="w-100" id="pMovieContainer">
+                            <!--data from api-->
+                        </div>
+                    </div>
+                    <div class="w-100 py-3">
+                        <div class="fs-4">Recommended</div>
+                        <!--desc-->
+                        <div class="fs-5 fw-lighter pt-2">You need to <span class="badge bg-primary">Login</span> or
+                            <span class="badge bg-success">Signup</span> for recommendation
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!--side popular bar ends here-->
+</section>
+<!--home page ends here-->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--bootstrap-->
+<!--app js-->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/searchRes.js"></script>
+<!--app js-->
+
+</body>
+</html>
