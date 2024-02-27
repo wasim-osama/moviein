@@ -1,0 +1,28 @@
+<div class="w-100 text-light py-5">
+    <div class="container">
+        <div class="h4 text-center pb-3">Latest Movies</div>
+        <div class="row">
+            {{#each Movie}}
+                {{#if (ifCond @index '>' '0') }}
+                    <div class="col-lg-3 col-md-4 mb-3">
+                        <div class="card-custom position-relative text-light">
+                            <div class="image w-100 h-100">
+                                <img src="https:/www1.yts.nz{{this.large_cover_image}}" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="hov-content position-absolute w-100 h-100 top-0 start-0 py-4 border border-5 border-danger">
+                                <div class="d-flex flex-column h-100 justify-content-around align-items-center w-100">
+                                    <div class="rating-icon fs-3"><i class="las la-star text-danger pe-2"></i></div>
+                                    <div class="ratings fs-3 fw-bold">{{this.rating}}/10</div>
+                                    {{#each this.genres}}
+                                        <div class="genre fs-3 fw-bold">{{this}}</div>
+                                    {{/each}}
+                                    <a href="#" class="btn btn-danger py-2 px-4 fw-bold">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>

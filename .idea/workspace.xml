@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="" />
+    <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/component/list_movies.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/home_banner.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/home_banner.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/nav_fixed.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/nav_fixed.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/stylesheets/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/style.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +94,7 @@
       <workItem from="1708931602354" duration="6751000" />
       <workItem from="1709010930797" duration="648000" />
       <workItem from="1709013173921" duration="1092000" />
-      <workItem from="1709014300646" duration="4805000" />
+      <workItem from="1709014300646" duration="9754000" />
     </task>
     <servers />
   </component>
