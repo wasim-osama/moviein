@@ -1,64 +1,32 @@
-<div class="w-100 homepage-bg text-light position-relative" style="background-image: url('https://www1.yts.nz{{movie.background_image_original}}')">
+
+<div class="w-100 homepage-bg text-light position-relative" style="background-image: url('https://www1.yts.nz{{Movie.background_image}}')">
     <div class="overlay"></div>
-    <nav class="navbar navbar-expand-lg bg-transparent position-sticky top-0 border-bottom border-secondary navbar-dark py-3">
-        <div class="container-fluid container-custom-nav">
-            <a class="navbar-brand text-danger fs-3" href="#">MovieIn</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Browse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">New</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <div class="text-light"><i class="las la-search"></i></div>
-                </form>
-            </div>
-        </div>
-    </nav>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="content-area position-relative z-1">
                     <div class="rating-info-zone d-flex">
                         <div class="">
                             <i class="las la-star text-danger pe-2"></i>
-                            {{movie.rating}}
+                            {{Movie.rating}}
                         </div>
                         <div class="text-white-50">&#x2022;</div>
                         <div class="">
-                            {{movie.year}}
+                            {{Movie.year}}
                         </div>
                         <div class="text-white-50">&#x2022;</div>
                         <div class="">
-                            {{#each movie.genres}}
+                            {{#each Movie.genres}}
                                 <span class="badge bg-success fw-normal">{{this}}</span>
                             {{/each}}
                         </div>
                     </div>
-                    <div class="fs-4 text-uppercase py-3 title">{{movie.title_english}}</div>
-                    <p class="fs-6 py-3 paragraph">{{movie.description_full}}</p>
-
-                    <button class="btn btn-danger rounded rounded-5 fs-5 py-2 px-4">
+                    <div class="fs-4 text-uppercase py-3 title">{{Movie.title_english}}</div>
+                    <p class="fs-6 py-3 paragraph">{{Movie.description_full}}</p>
+                    <a href="#" class="btn btn-danger rounded rounded-5 fs-5 py-2 px-4">
                         <i class="las la-download"></i>
                         Download
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

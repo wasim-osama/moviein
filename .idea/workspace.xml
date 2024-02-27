@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="E:\work\xampp\php\php.exe" />
+  <component name="ProjectId" id="2cFjULGSbyi06k6i4eBptVuk2dQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/work/laragon/www/Moviein/resource/stylesheets",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\laragon\www\Moviein\resource\stylesheets" />
+      <recent name="E:\work\laragon\www\Moviein\resource\stylesheets\pages" />
+      <recent name="E:\work\laragon\www\Moviein\component" />
+      <recent name="E:\work\laragon\www\moviein\assets\js" />
+      <recent name="E:\work\laragon\www\moviein" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="" />
+      <created>1707714235618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707714235618</updated>
+      <workItem from="1707714235953" duration="20859000" />
+      <workItem from="1707799243085" duration="20024000" />
+      <workItem from="1707883734379" duration="18276000" />
+      <workItem from="1707909135734" duration="643000" />
+      <workItem from="1707970102608" duration="13085000" />
+      <workItem from="1707995509103" duration="7550000" />
+      <workItem from="1708062895075" duration="8633000" />
+      <workItem from="1708083589865" duration="2981000" />
+      <workItem from="1708253213481" duration="8916000" />
+      <workItem from="1708315848267" duration="14383000" />
+      <workItem from="1708403872334" duration="21421000" />
+      <workItem from="1708576475142" duration="23970000" />
+      <workItem from="1708610391397" duration="6555000" />
+      <workItem from="1708666429658" duration="12488000" />
+      <workItem from="1708756567637" duration="10000" />
+      <workItem from="1708767475339" duration="7818000" />
+      <workItem from="1708858232476" duration="4964000" />
+      <workItem from="1708931602354" duration="6751000" />
+      <workItem from="1709010930797" duration="648000" />
+      <workItem from="1709013173921" duration="1092000" />
+      <workItem from="1709014300646" duration="4805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

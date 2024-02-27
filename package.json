@@ -1,11 +1,11 @@
 {
   "name": "moviein",
-  "version": "1.0.0",
-  "description": "movieIn",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "moviein movie server website now build with more clean code and a tempate language; now its more faster, more user friendly design and details",
+  "main": "app.js",
   "scripts": {
-    "watch": "sass --watch resources/stylesheet/style.scss:assets/css/style.min.css --style compressed"
+    "watch": "sass --watch resource/stylesheets/style.scss:assets/css/style.min.css --style compressed"
   },
-  "author": "",
+  "author": "wasim akram",
   "license": "ISC"
 }
