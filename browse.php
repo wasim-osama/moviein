@@ -5,11 +5,10 @@
 </head>
 <body>
 
+
 <?php include 'component/php/nav.php'; ?>
 
-<!--single Page-->
-<div id="nav_fixed" class="bg-black"></div>
-<!--single Page-->
+
 
 <div class="w-100 py-5">
     <div class="container">

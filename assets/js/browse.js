@@ -6,42 +6,49 @@ let browseInput = document.getElementById('browseInput'),
     orderBy = document.getElementById('orderBy'),
     ratings = document.getElementById('ratings'),
     searchBtn = document.getElementById('searchBtn'),
-    filteredMovies = [],
-    filteredMoviesData = [];
-
-ratingShow = document.getElementById('ratingShow');
+    ratingShow = document.getElementById('ratingShow');
 
 
+function bodyScroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.nav-scroller').classList.add('attachTop');
+    } else {
+        document.querySelector('.nav-scroller').classList.remove('attachTop');
+    }
+}
+
+document.addEventListener('scroll',bodyScroll);
+ratings.addEventListener('change', () => {
+    let ratingsVal = ratings.value;
+    ratingShow.innerHTML = ratingsVal;
+})
 searchBtn.addEventListener('click', () => {
     getFilteredMoviesData();
 })
 
-function gotoPage(page){
-    pageNo = page;
-    getFilteredMoviesData();
-}
 
 function getFilteredMoviesData() {
-    let qualityVal = quality.value,
+    let query = browseInput.value.toLowerCase(),
+        qualityVal = quality.value,
         genreVal = genre.value,
         yearVal = year.value,
         orderByVal = orderBy.value,
         ratingsVal = ratings.value;
-    fetch('http://moviein.test/api/list_movies.php?page='+pageNo+'&quality='+qualityVal+'&genre='+genreVal+'&year='+yearVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal).then(res => {
+    fetch('http://moviein.test/api/list_movies.php?page='+pageNo+'&sort_by=year&quality='+qualityVal+'&genre='+genreVal+'&year='+yearVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal+'&query_term='+query).then(res => {
         if (!res.ok){
             throw Error;
         }
         return res.json();
     }).then(res => {
         console.log(res);
-        filteredMovies = res.data.movies;
-        filteredMoviesData = res.data;
-        showMovies(res.data.movies);
+        const Movies = res.data.movies;
+        const MoviesData = res.data;
+        showMovies(Movies);
     })
 }
 
 
-function showMovies(movies){
+function showMovies(Movies){
     fetch('/component/hbs/list_movies.hbs').then(res => {
         if (!res.ok){
             throw Error;
@@ -49,7 +56,7 @@ function showMovies(movies){
         return res.text();
     }).then(data => {
         let template = Handlebars.compile(data);
-        template = template({Movie : movies});
+        template = template({Movie : Movies});
         document.getElementById('browse_page').innerHTML = template;
     })
 }

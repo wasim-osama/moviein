@@ -1,5 +1,6 @@
-<div class="single-page py-2 d-flex align-items-center vh-100">
-    <div class="container py-3 text-white">
+<div class="single-page py-2 d-flex align-items-center vh-100" style="background-image: url('https://www1.yts.nz{{Movie.background_image_original}}')">
+    <div class="overlay"></div>
+    <div class="container py-3 text-white position-relative z-1">
         <div class="row">
             <div class="col-12">
                 <div class="w-100">
@@ -44,8 +45,8 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="card-custom text-light w-100 h-100 m-auto shadow-cus">
-                    <div class="image w-100 h-100">
+                <div class="card-custom text-light w-100  m-auto shadow-cus">
+                    <div class="image w-100">
                         <img src="https://www1.yts.nz{{Movie.large_cover_image}}" alt="" class="w-100 h-100">
                     </div>
                 </div>
@@ -57,13 +58,15 @@
                     <div class="col-4"><img src="https://www1.yts.nz{{Movie.large_screenshot_image2}}" alt="" class="w-100 h-100" data-fancybox="gallery"></div>
                     <div class="col-4"><img src="https://www1.yts.nz{{Movie.large_screenshot_image3}}" alt="" class="w-100 h-100" data-fancybox="gallery"></div>
                 </div>
-                <div class="d-flex">
+                <div class="row">
                     {{#each Movie.torrents}}
-                        <a href="https://www1.yts.nz{{this.url}}" class="btn btn-danger rounded rounded-5 fs-6 fw-bold py-2 px-3 me-2">
-                            <i class="las la-download"></i>
-                            Download
-                            <span class="small text-white-50 fw-lighter">{{this.quality}}</span>
-                        </a>
+                        <div class="col-md-6">
+                            <a href="https://www1.yts.nz{{this.url}}" class="btn btn-danger rounded rounded-5 fs-6 fw-bold py-2 px-3">
+                                <i class="las la-download"></i>
+                                Download
+                                <span class="small text-white-50 fw-lighter">{{this.quality}}</span>
+                            </a>
+                        </div>
                     {{/each}}
                 </div>
 
