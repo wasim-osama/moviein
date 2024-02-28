@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/browse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/browse_movies.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/hbs/list_movies.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/php/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/php/nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/browse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/handlebars.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/handlebars.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/list_movies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/list_movies.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/nav_fixed.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/nav_fixed.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/single_page.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/single_page.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/browse_movies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/browse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/home_banner.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/home_banner.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/list_movies.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/nav_fixed.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/single_page.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/single_page.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="E:\work\xampp\php\php.exe" />
   <component name="ProjectId" id="2cFjULGSbyi06k6i4eBptVuk2dQ" />
@@ -65,6 +75,8 @@
       <recent name="E:\work\laragon\www\moviein\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\laragon\www\moviein\component\hbs" />
+      <recent name="G:\laragon\www\moviein\component" />
       <recent name="E:\work\laragon\www\Moviein\assets\js\backup" />
       <recent name="E:\work\laragon\www\Moviein\assets\js" />
     </key>
@@ -99,6 +111,7 @@
       <workItem from="1709013173921" duration="1092000" />
       <workItem from="1709014300646" duration="21700000" />
       <workItem from="1709093679295" duration="9399000" />
+      <workItem from="1709105893845" duration="2885000" />
     </task>
     <servers />
   </component>

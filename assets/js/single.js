@@ -3,19 +3,10 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     // Your custom options for a specific gallery
 });
 
-function showNav(){
-    fetch('/component/nav_fixed.hbs').then(res => {
-        if (!res.ok){
-            throw Error;
-        }
-        return res.text();
-    }).then(data => {
-        Handlebars.compile(data);
-        document.getElementById('nav_fixed').innerHTML = data;
-    })
-}
+
+
 function showSingleMovie(Movie){
-    fetch('/component/single_page.hbs').then(res => {
+    fetch('/component/hbs/single_page.hbs').then(res => {
         if (!res.ok){
             throw Error;
         }
@@ -39,7 +30,6 @@ function  getSingleMovie(){
         let Movie = null;
         Movie = res.data.movie;
         console.log(Movie);
-        showNav()
         showSingleMovie(Movie);
     })
 }

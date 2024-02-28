@@ -36,34 +36,21 @@ function getFilteredMoviesData() {
         console.log(res);
         filteredMovies = res.data.movies;
         filteredMoviesData = res.data;
-        showFilteredMovies();
+        showMovies(res.data.movies);
     })
 }
 
 
-function showMovies(Movies){
-    fetch('/component/browse_movies.hbs').then(res => {
+function showMovies(movies){
+    fetch('/component/hbs/list_movies.hbs').then(res => {
         if (!res.ok){
             throw Error;
         }
         return res.text();
     }).then(data => {
         let template = Handlebars.compile(data);
-        template = template({Movies : Movies});
+        template = template({Movie : movies});
         document.getElementById('browse_page').innerHTML = template;
-    })
-}
-
-function getBrowseMovies(){
-    fetch('http://moviein.test/api/list_movies.php?sort_by=year&minimum_rating=5').then(res =>{
-        if (!res.ok){
-            throw Error;
-        }
-        return res.json();
-    }).then(data => {
-        const Movies = data.data.movies;
-        showMovies(Movies)
-        console.log(Movies)
     })
 }
 
@@ -71,5 +58,4 @@ window.onload = () =>{
     const searchParam = new URLSearchParams(window.location.search);
     pageNo = searchParam.get('page') == null ? 1 :searchParam.get('page');
     getFilteredMoviesData();
-    getBrowseMovies();
 }

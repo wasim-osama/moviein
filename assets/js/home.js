@@ -1,5 +1,5 @@
 function showBanner(Movies){
-    fetch('../component/home_banner.hbs').then(res => {
+    fetch('/component/hbs/home_banner.hbs').then(res => {
         if (!res.ok){
             throw Error;
         }
@@ -20,26 +20,15 @@ function bodyScroll() {
 }
 
 document.addEventListener('scroll',bodyScroll);
-function showNav(){
-    fetch('/component/nav_fixed.hbs').then(res => {
-        if (!res.ok){
-            throw Error;
-        }
-        return res.text();
-    }).then(data => {
-        Handlebars.compile(data);
-        document.getElementById('nav_fixed').innerHTML = data;
-    })
-}
 function showList(Movies){
-    fetch('/component/list_movies.hbs').then(res => {
+    fetch('/component/hbs/list_movies.hbs').then(res => {
         if (!res.ok){
             throw Error;
         }
         return res.text();
     }).then(data => {
         let template = Handlebars.compile(data);
-        template = template({Movie : Movies});
+        template = template({Movie : Movies.slice(1, 17)});
         document.getElementById('list_movies').innerHTML = template;
     })
 }
@@ -52,7 +41,6 @@ function getMovies(){
     }).then(data => {
         console.log(data);
        const Movies = data.data.movies;
-        showNav();
         showBanner(Movies);
         showList(Movies);
     })

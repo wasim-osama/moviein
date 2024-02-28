@@ -1,3 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <?php include 'component/php/head.php'; ?>
+</head>
+<body>
+
+<?php include 'component/php/nav.php'; ?>
+
+<!--single Page-->
+<div id="nav_fixed" class="bg-black"></div>
+<!--single Page-->
+
 <div class="w-100 py-5">
     <div class="container">
         <div class="w-100 py-4 px-5 mt-5 text-light">
@@ -86,30 +99,15 @@
             <!--filter-custom ends here-->
         </div>
     </div>
-    <div class="container">
-        <div class="h3 text-center text-light pb-3">Browse The Movie Dimension</div>
-        <div class="row">
-            {{#each Movies}}
-                <div class="col-lg-3 col-md-4 mb-5">
-                    <div class="card-custom position-relative text-light">
-                        <div class="image w-100 h-100">
-                            <img src="https://www1.yts.nz{{this.large_cover_image}}" alt="" class="w-100 h-100">
-                        </div>
-                        <div class="hov-content position-absolute w-100 h-100 top-0 start-0 py-4 border border-5 border-danger">
-                            <div class="d-flex flex-column h-100 justify-content-around align-items-center w-100">
-                                <div class="rating-icon fs-3"><i class="las la-star text-danger pe-2"></i></div>
-                                <div class="ratings fs-3 fw-bold">{{this.rating}}</div>
-                                {{#each this.genres}}
-                                    {{#if (ifCond @index '<' '2')}}
-                                        <div class="genre fs-3 fw-bold">{{this}}</div>
-                                    {{/if}}
-                                {{/each}}
-                                <a href="movie.html?movie_id={{this.id}}" class="btn btn-danger py-2 px-4 fw-bold">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {{/each}}
-        </div>
-    </div>
 </div>
+
+<!--browse_page-->
+<div id="browse_page"></div>
+<!--browse_page-->
+
+
+<script src="/assets/js/handlebars.min.js"></script>
+<script src="assets/js/browse.js?<?php echo uniqid(); ?>"></script>
+
+</body>
+</html>

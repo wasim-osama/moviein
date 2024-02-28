@@ -9,12 +9,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-muted">
                 <li class="nav-item px-3 mx-2 position-relative">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="/">Home</a>
                     <div class="nav-hov position-absolute start-0 bg-danger rounded-3 nav-hov-active"></div>
 
                 </li>
                 <li class="nav-item px-3 mx-2 position-relative">
-                    <a class="nav-link" href="#">Browse</a>
+                    <a class="nav-link" href="/browse.php">Browse</a>
                     <div class="nav-hov position-absolute start-0 bg-danger rounded-3"></div>
                 </li>
                 <li class="nav-item px-3 mx-2 position-relative">
