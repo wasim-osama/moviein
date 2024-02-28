@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/FilterSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/FilterSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/FilterSearchDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/FilterSearchDemo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/browse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/searchRes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/searchRes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/backup/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/backup/single.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/browse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/recent.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/recent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/single.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/php/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/php/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/hbs/list_movies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/list_movies.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
