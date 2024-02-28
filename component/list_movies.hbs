@@ -14,9 +14,11 @@
                                     <div class="rating-icon fs-3"><i class="las la-star text-danger pe-2"></i></div>
                                     <div class="ratings fs-3 fw-bold">{{this.rating}}/10</div>
                                     {{#each this.genres}}
-                                        <div class="genre fs-3 fw-bold">{{this}}</div>
+                                        {{#if (ifCond @index '<' '2')}}
+                                            <div class="genre fs-3 fw-bold">{{this}}</div>
+                                        {{/if}}
                                     {{/each}}
-                                    <a href="#" class="btn btn-danger py-2 px-4 fw-bold">View More</a>
+                                    <a href="movie.html?movie_id={{this.id}}" class="btn btn-danger py-2 px-4 fw-bold" target="_blank ">View More</a>
                                 </div>
                             </div>
                         </div>

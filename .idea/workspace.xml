@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/component/list_movies.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/browse_movies.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/home_banner.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/home_banner.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/list_movies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/list_movies.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/nav_fixed.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/nav_fixed.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/stylesheets/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/single_page.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/single_page.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +41,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/work/laragon/www/Moviein/resource/stylesheets",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/work/laragon/www/Moviein/assets/js&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\laragon\www\Moviein\assets\js" />
       <recent name="E:\work\laragon\www\Moviein\resource\stylesheets" />
       <recent name="E:\work\laragon\www\Moviein\resource\stylesheets\pages" />
       <recent name="E:\work\laragon\www\Moviein\component" />
       <recent name="E:\work\laragon\www\moviein\assets\js" />
-      <recent name="E:\work\laragon\www\moviein" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\laragon\www\Moviein\assets\js\backup" />
+      <recent name="E:\work\laragon\www\Moviein\assets\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +97,8 @@
       <workItem from="1708931602354" duration="6751000" />
       <workItem from="1709010930797" duration="648000" />
       <workItem from="1709013173921" duration="1092000" />
-      <workItem from="1709014300646" duration="9754000" />
+      <workItem from="1709014300646" duration="21700000" />
+      <workItem from="1709093679295" duration="9399000" />
     </task>
     <servers />
   </component>

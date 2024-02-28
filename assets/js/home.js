@@ -60,5 +60,4 @@ function getMovies(){
 
 window.onload = () => {
     getMovies();
-
 }
