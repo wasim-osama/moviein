@@ -152,7 +152,7 @@ function showNewMovies(){
     newMovieContainer.innerHTML = HTML;
 }
 function getActionMovies(){
-    fetch('http://moviein.test/api/list_movies.php?sort_by=rating&order_by=desc&genre=action&limit=10').then(res =>{
+    fetch(window.api_url+'/api/list_movies.php?sort_by=rating&order_by=desc&genre=action&limit=10').then(res =>{
         if (!res.ok){
             throw "error in fetching getActionMovies";
         }
@@ -186,7 +186,7 @@ function getPMovies(){
     })
 }
 function getNewMovies(){
-    fetch('http://moviein.test/api/list_movies.php?sort_by=year&order_by=desc&minimum_rating:5&limit=4').then(res => {
+    fetch(window.api_url+'/api/list_movies.php?sort_by=year&order_by=desc&minimum_rating:5&limit=4').then(res => {
         if (!res.ok){
             throw "error in fetching getNewMovies"
         }

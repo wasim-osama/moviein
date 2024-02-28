@@ -126,7 +126,7 @@ function getFilteredMovies() {
     let yearVal = year.value;
     let orderByVal = orderBy.value;
     let ratingsVal = ratings.value;
-    fetch('http://moviein.test/api/list_movies.php?page=' + PageNo + '&order_by=' + orderByVal + '&minimum_rating=' + ratingsVal + '&year=' + yearVal + '&quality=' + qualityVal + '&genre=' + genreVal + '&query_term=' + query).then(res => {
+    fetch(window.api_url+'/api/list_movies.php?page=' + PageNo + '&order_by=' + orderByVal + '&minimum_rating=' + ratingsVal + '&year=' + yearVal + '&quality=' + qualityVal + '&genre=' + genreVal + '&query_term=' + query).then(res => {
         if (!res.ok) {
             throw Error;
         }

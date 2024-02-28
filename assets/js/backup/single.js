@@ -119,7 +119,7 @@ function showRelatedMovies(){
     relatedMovieContainer.innerHTML = RMhtml;
 }
 function  getSingleMovie(){
-    fetch('http://moviein.test/api/movie_details.php?movie_id='+movie_id+'&with_images=true&with_cast=true').then(res => {
+    fetch(window.api_url+'/api/movie_details.php?movie_id='+movie_id+'&with_images=true&with_cast=true').then(res => {
         if (!res.ok){
             throw Error;
         }
@@ -131,7 +131,7 @@ function  getSingleMovie(){
     })
 }
 function  getSuggestMovie(){
-    fetch('http://moviein.test/api/movie_suggestions.php?movie_id='+movie_id).then(res => {
+    fetch(window.api_url+'/api/movie_suggestions.php?movie_id='+movie_id).then(res => {
         if (!res.ok){
             throw Error;
         }

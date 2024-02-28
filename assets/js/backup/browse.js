@@ -51,7 +51,7 @@ function showBrowseMovies(){
 }
 
 function getBrowseMovie(){
-    fetch('http://moviein.test/api/list_movies.php').then(res => {
+    fetch(window.api_url+'/api/list_movies.php').then(res => {
         if (!res.ok){
             throw Error;
         }
@@ -68,7 +68,7 @@ function pagination(){
     let paginationCount = browseMovieData.movie_count / browseMovieData.limit;
     let currentPage = browseMovieData.page_number;
     let skip =  browseMovieData.limit * (currentPage - 1);
-    let paginationUrl = 'http://moviein.test/api/list_movies.php?skip='+skip;
+    let paginationUrl = window.api_url+'/api/list_movies.php?skip='+skip;
     let paginationContent = document.getElementById('paginationContent');
     let html = ''
     for(let p= 1; p < Math.min(paginationCount,8); p++){

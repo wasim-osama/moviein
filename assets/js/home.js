@@ -33,7 +33,8 @@ function showList(Movies){
     })
 }
 function getMovies(){
-    fetch('http://moviein.test/api/list_movies.php?sort_by=year&minimum_rating=5&order_by=desc&limit=17').then(res => {
+    console.log(window.api_url);
+    fetch(window.api_url+'/api/list_movies.php?sort_by=year&minimum_rating=5&order_by=desc&limit=17').then(res => {
         if (!res.ok){
             throw Error;
         }

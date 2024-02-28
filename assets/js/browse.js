@@ -34,7 +34,7 @@ function getFilteredMoviesData() {
         yearVal = year.value,
         orderByVal = orderBy.value,
         ratingsVal = ratings.value;
-    fetch('http://moviein.test/api/list_movies.php?page='+pageNo+'&sort_by=year&quality='+qualityVal+'&genre='+genreVal+'&year='+yearVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal+'&query_term='+query).then(res => {
+    fetch(window.api_url+'/api/list_movies.php?page='+pageNo+'&sort_by=year&quality='+qualityVal+'&genre='+genreVal+'&year='+yearVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal+'&query_term='+query).then(res => {
         if (!res.ok){
             throw Error;
         }

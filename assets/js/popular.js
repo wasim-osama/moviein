@@ -10,7 +10,7 @@ function bodyScroll() {
 
 document.addEventListener('scroll',bodyScroll);
 function getRecentMovies(){
-    fetch('http://moviein.test/api/list_movies.php?sort_by=rating').then(res => {
+    fetch(window.api_url+'/api/list_movies.php?sort_by=rating').then(res => {
         if (!res.ok){
             throw Error;
         }

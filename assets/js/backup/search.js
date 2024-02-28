@@ -49,7 +49,7 @@ function noResSearchMovies(){
 }
 function getSearchMovies(){
     let q  = searchbar.value.toLowerCase();
-    fetch('http://moviein.test/api/list_movies.php?sort_by=rating&order_by=desc&query_term='+q).then(res => {
+    fetch(window.api_url+'/api/list_movies.php?sort_by=rating&order_by=desc&query_term='+q).then(res => {
         if (!res.ok){
             throw Error;
         }
