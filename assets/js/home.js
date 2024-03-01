@@ -11,6 +11,11 @@ function showBanner(Movies){
     })
 
 }
+
+function hidePreloader(){
+    document.querySelector('.preloader').classList.add('LoaderHide');
+}
+
 function bodyScroll() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.querySelector('.nav-scroller').classList.add('attachTop');
@@ -33,13 +38,13 @@ function showList(Movies){
     })
 }
 function getMovies(){
-    console.log(window.api_url);
     fetch(window.api_url+'/api/list_movies.php?sort_by=year&minimum_rating=5&order_by=desc&limit=17').then(res => {
         if (!res.ok){
             throw Error;
         }
         return res.json();
     }).then(data => {
+        hidePreloader();
         console.log(data);
        const Movies = data.data.movies;
         showBanner(Movies);

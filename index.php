@@ -6,6 +6,14 @@
 <body>
 
 <?php include 'component/php/nav.php'; ?>
+<div class="preloader">
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
 
 
 <!--Home banner-->
