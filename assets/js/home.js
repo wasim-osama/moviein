@@ -11,6 +11,17 @@ function showBanner(Movies){
     })
 
 }
+function getLastPart() {
+    const parts = url.split('/');
+    return parts.at(-1);
+}
+let url = window.location.href;
+let lastRoute = getLastPart(url);
+console.log(lastRoute);
+console.log('' === lastRoute)
+if ('' === lastRoute){
+    document.getElementById('home-nav').classList.add('nav-hov-active');
+}
 
 function hidePreloader(){
     document.querySelector('.preloader').classList.add('LoaderHide');

@@ -6,7 +6,7 @@
 <body>
 
 <?php include 'component/php/nav.php'; ?>
-<div class="preloader">
+<div class="preloader z-3">
     <div class="loader">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -24,5 +24,6 @@
 <!--List Movies-->
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="/assets/js/home.js?<?php echo uniqid(); ?>"></script>
+<script src="/assets/js/search.js"></script>
 </body>
 </html>

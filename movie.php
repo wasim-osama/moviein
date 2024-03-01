@@ -8,6 +8,14 @@
 <body>
 
 <?php include 'component/php/nav.php'; ?>
+<div class="preloader z-3">
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
 
 <!--single Page-->
     <div id="single_page"></div>

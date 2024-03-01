@@ -1,4 +1,7 @@
 
+function hidePreloader(){
+    document.querySelector('.preloader').classList.add('LoaderHide');
+}
 Fancybox.bind('[data-fancybox="gallery"]', {
     // Your custom options for a specific gallery
 });
@@ -27,6 +30,7 @@ function  getSingleMovie(){
         }
         return res.json();
     } ).then(res => {
+        hidePreloader();
         let Movie = null;
         Movie = res.data.movie;
         console.log(Movie);

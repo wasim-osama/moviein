@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_preloader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alltime.php" beforeDir="false" afterPath="$PROJECT_DIR$/alltime.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Hourglass.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/browse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/popular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/recent.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/recent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/browse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/php/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/php/nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/stylesheets/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/movie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recent.php" beforeDir="false" afterPath="$PROJECT_DIR$/recent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_nav.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +112,7 @@
       <workItem from="1709014300646" duration="21700000" />
       <workItem from="1709093679295" duration="9399000" />
       <workItem from="1709105893845" duration="2885000" />
-      <workItem from="1709283925903" duration="3628000" />
+      <workItem from="1709283925903" duration="9727000" />
     </task>
     <servers />
   </component>

@@ -7,8 +7,21 @@ let browseInput = document.getElementById('browseInput'),
     ratings = document.getElementById('ratings'),
     searchBtn = document.getElementById('searchBtn'),
     ratingShow = document.getElementById('ratingShow');
+function getLastPart() {
+    const parts = url.split('/');
+    return parts.at(-1);
+}
+let url = window.location.href;
+let lastRoute = getLastPart(url);
+console.log(lastRoute);
+console.log('browse.php' === lastRoute)
+if ('browse.php' === lastRoute){
+    document.getElementById('browse-nav').classList.add('nav-hov-active');
+}
 
-
+function hidePreloader(){
+    document.querySelector('.preloader').classList.add('LoaderHide');
+}
 function bodyScroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.querySelector('.nav-scroller').classList.add('attachTop');
@@ -40,6 +53,7 @@ function getFilteredMoviesData() {
         }
         return res.json();
     }).then(res => {
+        hidePreloader();
         console.log(res);
         const Movies = res.data.movies;
         const MoviesData = res.data;

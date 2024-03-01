@@ -8,7 +8,14 @@
 
 <?php include 'component/php/nav.php'; ?>
 
-
+<div class="preloader z-3">
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
 
 <div class="w-100 py-5">
     <div class="container">
