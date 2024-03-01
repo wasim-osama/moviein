@@ -14,3 +14,4 @@
 <script>
     window.api_url = "<?php echo '//'.$_SERVER['SERVER_NAME'];?>";
 </script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
