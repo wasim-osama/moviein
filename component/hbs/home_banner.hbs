@@ -5,7 +5,7 @@
         <div class="d-flex flex-column justify-content-center content-height">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class=" position-relative z-1">
+                    <div class=" position-relative z-1 banner-text">
                         <div class="rating-info-zone d-flex">
                             <div class="">
                                 <i class="las la-star text-danger pe-2"></i>
@@ -30,18 +30,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" id="side-img">
                     <div class="card-custom position-relative text-light ms-auto">
                         <div class="image w-100 h-100">
                             <img src="https://www1.yts.nz{{Movie.large_cover_image}}" alt="" class="w-100 h-100">
-                        </div>
-                        <div class="hov-content position-absolute w-100 h-100 top-0 start-0 py-4 border border-5 border-danger">
-                            <div class="d-flex flex-column h-100 justify-content-around align-items-center w-100">
-                                <div class="rating-icon fs-3"><i class="las la-star text-danger pe-2"></i></div>
-                                <div class="ratings fs-3 fw-bold">{{Movie.rating}}/10</div>
-                                <div class="genre fs-3 fw-bold">{{Movie.genres}}</div>
-                                <a href="movie.html?movie_id={{Movie.id}}" class="btn btn-danger py-2 px-4 fw-bold">View More</a>
-                            </div>
                         </div>
                     </div>
                 </div>

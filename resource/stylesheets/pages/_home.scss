@@ -82,3 +82,15 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+  #side-img{
+    display: none;
+  }
+  .banner-text{
+    text-align: center;
+  }
+  .rating-info-zone{
+    width: 100%;
+    margin: auto;
+  }
+}
