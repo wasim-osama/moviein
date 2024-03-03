@@ -25,5 +25,6 @@
 <!--recent Movies-->
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="/assets/js/recent.js?<?php echo uniqid(); ?>"></script>
+<script src="/assets/js/search.js?<?php echo uniqid(); ?>"></script>
 </body>
 </html>

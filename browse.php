@@ -81,21 +81,21 @@
                     </select>
                 </div>
             </div>
-            <div class="row pt-3">
-                <div class="col-lg-2 col-md-1">
-                    <div class="h4">
+            <div class="row pt-3 text-center">
+                <div class="col-md-2">
+                    <div class="h5">
                         Ratings
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-10">
+                <div class="col-md-8">
                     <div class="input-group align-items-center">
                         <div class="fw-light fs-4">0</div>
                         <input type="range" class="form-range px-2 w-90" min="0" max="10" id="ratings" value="0">
                         <div class="fw-light fs-4">10</div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-1">
-                    <div class="h4">
+                <div class="col-md-2">
+                    <div class="h5">
                         <span class="text-accents"><i class="las la-star"></i></span>
                         <span  id="ratingShow">0</span>
                         <span class="small fw-lighter">/10</span>
@@ -114,6 +114,7 @@
 
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="assets/js/browse.js?<?php echo uniqid(); ?>"></script>
+<script src="assets/js/search.js?<?php echo uniqid(); ?>"></script>
 
 </body>
 </html>

@@ -25,14 +25,16 @@ function showSearchMovies(){
     for (let i = 0; i < searchMovie.length; i++){
         if (i < 4){
             html +=`
-        <div class="row bg-background shadow-sm d-flex align-items-center py-2 border-bottom border-accents">
-            <div class="col-1">
-                <img src="https://www1.yts.nz`+searchMovie[i].small_cover_image+`" onerror="this.src='assets/img/poster.jpg'">
+        <a  href="movie.php?movie_id=`+searchMovie[i].id+`" class="text-decoration-none text-light">
+            <div class="row bg-background shadow-sm d-flex align-items-center py-2 border-bottom border-accents">
+                <div class="col-3">
+                    <img src="https://www1.yts.nz`+searchMovie[i].small_cover_image+`" class="w-100 h-100">
+                </div>
+                <div class="col-7">
+                    <div class="fs-6 fw-bold">`+searchMovie[i].title_english.substring(0,20)+`..</div>
+                </div>
             </div>
-            <div class="col-8 offset-2">
-                <a class="fs-6 fw-bold text-decoration-none text-light" href="movie.html?movie_id=`+searchMovie[i].id+`">`+searchMovie[i].title_english.substring(0,20)+`..</a>
-            </div>
-        </div>
+        </a>
         `
         }
 

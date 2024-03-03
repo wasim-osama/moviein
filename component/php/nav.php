@@ -31,10 +31,9 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <div class="text-light" type="button" id="searchIcon"><i class="las la-search"></i></div>
-                    <div class="search-form rounded-5">
+                    <div class="search-form">
                         <div class="input-group  bg-black">
-                            <input type="text" class="form-control" id="searchbar" placeholder="Search Movies">
-                            <span class="input-group-text rounded-end" id="basic-addon2"><i class="las la-search"></i></span>
+                            <input type="text" class="form-control rounded-2" id="searchbar" placeholder="Search Movies">
                             <div class="w-100 position-absolute z-2 custom-search-content left-0" id="searchContent">
                                 <!--search api-->
                             </div>

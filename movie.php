@@ -29,6 +29,7 @@
 <!--app js-->
 <script src="/assets/js/handlebars.min.js?<?php echo uniqid(); ?>"></script>
 <script src="/assets/js/single.js?<?php echo uniqid(); ?>"></script>
+<script src="/assets/js/search.js?<?php echo uniqid(); ?>"></script>
 <!--
 <script src="assets/js/search.js"></script>
 -->
