@@ -1,7 +1,9 @@
 <div id="nav_fixed">
     <nav class="navbar navbar-expand-lg  border-bottom border-secondary navbar-dark py-3 nav-scroller">
         <div class="container-fluid container-custom-nav">
-            <a class="navbar-brand text-danger fs-3" href="/">MovieIn</a>
+            <a class="navbar-brand text-danger fs-3" href="/">
+                <img src="assets/img/moviein_logo_transparent.png" alt="MovieIn" class="logo-img">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
