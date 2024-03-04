@@ -21,22 +21,22 @@
     <div class="container">
         <div class="w-100 py-4 px-5 mt-5 text-light">
             <!--Search-bar start here-->
-            <label class="h3 fw-normal">Search Term</label>
+            <label class="h5 pb-2 fw-normal pb-2">Search Term</label>
             <div class="input-group mb-3">
-                <input type="text" class="form-control bg-dark text-light border-accents border-end-0"
+                <input type="text" class="form-control bg-dark text-light border-danger border-end-0"
                        placeholder="Recipient's username" aria-label="Recipient's username"
                        aria-describedby="basic-addon2" id="browseInput">
-                <button class="input-group-text bg-black border-accents border-start-0 text-decoration-none" id="searchBtn"><i
+                <button class="input-group-text bg-black border-danger border-start-0 text-decoration-none" id="searchBtn"><i
                         class="las la-search text-light"></i></button>
             </div>
             <!--Search-bar end here-->
             <!--filter-custom starts here-->
             <div class="row">
                 <div class="col-sm-3 col-6">
-                    <div class="h4">
+                    <div class="h5 pb-2">
                         Quality
                     </div>
-                    <select class="form-select bg-dark text-light border-accents"
+                    <select class="form-select bg-dark text-light border-danger"
                             aria-label="Default select example" id="quality">
                         <option disabled selected value>Open this select menu</option>
                         <option value="2600p">4k</option>
@@ -45,10 +45,10 @@
                     </select>
                 </div>
                 <div class="col-sm-3 col-6">
-                    <div class="h4">
+                    <div class="h5 pb-2">
                         Genre
                     </div>
-                    <select class="form-select bg-dark text-light border-accents"
+                    <select class="form-select bg-dark text-light border-danger"
                             aria-label="Default select example" id="genre">
                         <option disabled selected value>Open this select menu</option>
                         <option value="romantic">Romantic</option>
@@ -57,10 +57,10 @@
                     </select>
                 </div>
                 <div class="col-sm-3 col-6">
-                    <div class="h4">
+                    <div class="h5 pb-2">
                         Year
                     </div>
-                    <select class="form-select bg-dark text-light border-accents"
+                    <select class="form-select bg-dark text-light border-danger"
                             aria-label="Default select example" id="year">
                         <option disabled selected value>Select Specific year</option>
                         <option value="2020">2020</option>
@@ -69,10 +69,10 @@
                     </select>
                 </div>
                 <div class="col-sm-3 col-6">
-                    <div class="h4">
+                    <div class="h5 pb-2">
                         Order By
                     </div>
-                    <select class="form-select bg-dark text-light border-accents"
+                    <select class="form-select bg-dark text-light border-danger"
                             aria-label="Default select example" id="orderBy">
                         <option disabled selected value>Open this select menu</option>
                         <option value="desc">desc</option>
@@ -81,9 +81,9 @@
                     </select>
                 </div>
             </div>
-            <div class="row pt-3 text-center">
+            <div class="row pt-5 text-center">
                 <div class="col-md-2">
-                    <div class="h5">
+                    <div class="h5 pb-2">
                         Ratings
                     </div>
                 </div>
@@ -95,8 +95,8 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="h5">
-                        <span class="text-accents"><i class="las la-star"></i></span>
+                    <div class="h5 pb-2">
+                        <span class="text-danger"><i class="las la-star"></i></span>
                         <span  id="ratingShow">0</span>
                         <span class="small fw-lighter">/10</span>
                     </div>
@@ -110,8 +110,15 @@
 <!--browse_page-->
 <div id="browse_page"></div>
 <!--browse_page-->
-
-
+<!--pagination-starts-here-->
+<div class="px-4 d-flex justify-content-center" id="browseMovieContainer">
+    <nav>
+        <ul class="pagination py-2" id="paginationContent">
+            <!--data fro api-->
+        </ul>
+    </nav>
+</div>
+<!--pagination-ends-here-->
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="assets/js/browse.js?<?php echo uniqid(); ?>"></script>
 <script src="assets/js/search.js?<?php echo uniqid(); ?>"></script>

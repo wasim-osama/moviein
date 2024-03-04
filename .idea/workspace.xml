@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/browse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/php/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/php/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/browse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/hbs/list_movies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/list_movies.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1709105893845" duration="2885000" />
       <workItem from="1709283925903" duration="11573000" />
       <workItem from="1709447296961" duration="3063000" />
-      <workItem from="1709525864050" duration="3126000" />
+      <workItem from="1709525864050" duration="5297000" />
     </task>
     <servers />
   </component>

@@ -28,7 +28,7 @@ function showSearchMovies(){
         <a  href="movie.php?movie_id=`+searchMovie[i].id+`" class="text-decoration-none text-light">
             <div class="row bg-background shadow-sm d-flex align-items-center py-2 border-bottom border-accents">
                 <div class="col-3">
-                    <img src="https://www1.yts.nz`+searchMovie[i].small_cover_image+`" class="w-100 h-100">
+                    <img src="https://www1.yts.nz`+searchMovie[i].small_cover_image+`" class="w-100 h-100" onerror="this.src='assets/img/poster.jpg'">
                 </div>
                 <div class="col-7">
                     <div class="fs-6 fw-bold">`+searchMovie[i].title_english.substring(0,20)+`..</div>

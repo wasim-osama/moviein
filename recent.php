@@ -23,6 +23,15 @@
 <!--recent Movies-->
 <div id="recent_movies"></div>
 <!--recent Movies-->
+<!--pagination-starts-here-->
+<div class="px-4 d-flex justify-content-center" id="browseMovieContainer">
+    <nav>
+        <ul class="pagination py-2" id="paginationContent">
+            <!--data fro api-->
+        </ul>
+    </nav>
+</div>
+<!--pagination-ends-here-->
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="/assets/js/recent.js?<?php echo uniqid(); ?>"></script>
 <script src="/assets/js/search.js?<?php echo uniqid(); ?>"></script>
