@@ -6,7 +6,15 @@ let browseInput = document.getElementById('browseInput'),
     orderBy = document.getElementById('orderBy'),
     ratings = document.getElementById('ratings'),
     searchBtn = document.getElementById('searchBtn'),
-    ratingShow = document.getElementById('ratingShow');
+    ratingShow = document.getElementById('ratingShow'),
+    navbarToggler = document.querySelector('.navbar-toggler');
+
+
+
+navbarToggler.addEventListener('click', () => {
+    document.querySelector('.nav-scroller').classList.add('attachTop');
+})
+
 function getLastPart() {
     const parts = url.split('/');
     return parts.at(-1);

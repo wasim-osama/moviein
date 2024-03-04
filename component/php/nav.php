@@ -31,8 +31,8 @@
 
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <div class="text-light" type="button" id="searchIcon"><i class="las la-search"></i></div>
+                <form class="d-flex justify-content-center" role="search">
+                    <a class="text-light" type="button" id="searchIcon"><i class="las la-search"></i></a>
                     <div class="search-form">
                         <div class="input-group  bg-black">
                             <input type="text" class="form-control rounded-2" id="searchbar" placeholder="Search Movies">
