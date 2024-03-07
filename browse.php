@@ -119,6 +119,11 @@
     </nav>
 </div>
 <!--pagination-ends-here-->
+
+<!--footer-->
+<?php include "component/php/footer.php";?>
+<!--footer-->
+
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="assets/js/browse.js?<?php echo uniqid(); ?>"></script>
 <script src="assets/js/search.js?<?php echo uniqid(); ?>"></script>

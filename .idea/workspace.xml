@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/component/hbs/single_page_demo.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alltime.php" beforeDir="false" afterPath="$PROJECT_DIR$/alltime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/browse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/hbs/single_page.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/single_page.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/movie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recent.php" beforeDir="false" afterPath="$PROJECT_DIR$/recent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1709283925903" duration="11573000" />
       <workItem from="1709447296961" duration="3063000" />
       <workItem from="1709525864050" duration="14375000" />
-      <workItem from="1709787017917" duration="10680000" />
+      <workItem from="1709787017917" duration="14146000" />
     </task>
     <servers />
   </component>

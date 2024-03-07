@@ -31,6 +31,10 @@
         </ul>
     </nav>
 </div>
+
+<!--footer-->
+<?php include "component/php/footer.php";?>
+<!--footer-->
 <!--pagination-ends-here-->
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="/assets/js/recent.js?<?php echo uniqid(); ?>"></script>

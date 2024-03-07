@@ -22,6 +22,9 @@
 <!--List Movies-->
 <div id="list_movies"></div>
 <!--List Movies-->
+<!--footer-->
+<?php include "component/php/footer.php";?>
+<!--footer-->
 <script src="/assets/js/handlebars.min.js"></script>
 <script src="/assets/js/home.js?<?php echo uniqid(); ?>"></script>
 <script src="/assets/js/search.js"></script>
