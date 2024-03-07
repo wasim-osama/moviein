@@ -25,53 +25,53 @@ function pagination(){
 
     let html = '';
     let pageLi = 1;
-    html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">< Previous</a></li>`;
+    html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">< Previous</a></li>`;
 
     if (currentPage >= 6){
-        html += `<li class="page-item"><a onclick="gotoPage(1)" class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">`+1+`</a></li>`;
-        html += `<li class="page-item"><a onclick="gotoPage(2)" class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">`+2+`</a></li>`;
-        html += `<li class="page-item"><a  class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">..</a></li>`;
+        html += `<li class="page-item"><a onclick="gotoPage(1)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">`+1+`</a></li>`;
+        html += `<li class="page-item"><a onclick="gotoPage(2)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">`+2+`</a></li>`;
+        html += `<li class="page-item"><a  class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">..</a></li>`;
     }
     if ((currentPage - 3) > 0){
         pageLi++;
-        html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 3)+`)" class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">`+(currentPage - 3)+`</a></li>`;
+        html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 3)+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">`+(currentPage - 3)+`</a></li>`;
     }
     if ((currentPage - 2) > 0){
         pageLi++;
-        html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 2)+`)" class="page-link bg-dark text-light border-accents px-4 py-2" role="button">`+(currentPage - 2)+`</a></li>`;
+        html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 2)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">`+(currentPage - 2)+`</a></li>`;
     }
     if ((currentPage - 1) > 0){
         pageLi++;
-        html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-accents px-4 py-2" role="button">`+(currentPage - 1)+`</a></li>`;
+        html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">`+(currentPage - 1)+`</a></li>`;
     }
-    html += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-accents px-4 py-2 bg-success" role="button">`+currentPage+`</a></li>`;
+    html += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-danger px-4 py-2 bg-success" role="button">`+currentPage+`</a></li>`;
     if (currentPage < (totalPage - 3)){
         if ((currentPage + 1) <= totalPage){
             pageLi++;
-            html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 1)+`)" class="page-link bg-dark text-light border-accents px-4 py-2" role="button">`+(currentPage + 1)+`</a></li>`;
+            html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">`+(currentPage + 1)+`</a></li>`;
         }
         if ((currentPage + 2) <= totalPage){
             pageLi++;
-            html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 2)+`)" class="page-link bg-dark text-light border-accents px-4 py-2" role="button">`+(currentPage + 2)+`</a></li>`;
+            html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 2)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">`+(currentPage + 2)+`</a></li>`;
         }
         if ((currentPage + 3) <= totalPage) {
             pageLi++;
-            html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 3)+`)" class="page-link bg-dark text-light border-accents px-4 py-2" role="button">` + (currentPage + 3) + `</a></li>`;
+            html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 3)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">` + (currentPage + 3) + `</a></li>`;
         }
     }
 
     let reqPageStart = currentPage + 4;
     let reqPage = reqPageStart + (7 - pageLi);
     for (let i = reqPageStart; i < reqPage; i++){
-        html += `<li class="page-item"><a onclick="gotoPage(+i+)" class="page-link bg-dark text-light border-accents px-4 py-2" role="button">` +i+ `</a></li>`;
+        html += `<li class="page-item"><a onclick="gotoPage(+i+)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">` +i+ `</a></li>`;
     }
     if (currentPage < totalPage){
         if (currentPage <= totalPage){
-            html += `<li class="page-item"><a class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">..</a></li>`;
-            html += `<li class="page-item"><a onclick="gotoPage(`+totalPage+`)" class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">`+totalPage+`</a></li>`;
+            html += `<li class="page-item"><a class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">..</a></li>`;
+            html += `<li class="page-item"><a onclick="gotoPage(`+totalPage+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">`+totalPage+`</a></li>`;
         }
     }
-    html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 1)+`)" class="page-link bg-dark text-light border-accents px-4 py-2 cursor" role="button">next ></a></li>`;
+    html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">next ></a></li>`;
     paginationContent.innerHTML = html;
     console.log(pageLi);
 
