@@ -1,9 +1,31 @@
 .single-page{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+        .download-overlay{
+            opacity: 0;
+            transition: 0.5s all ease-in-out;
+            left: 11vw;
+            width: 135%;
+            bottom: 0;
+            visibility: hidden;
+            .vr:nth-last-child(1) {
+                display: none;
+            }
+        }
+        .download-overlay-show{
+            opacity: 1;
+            transition: 0.5s all ease-in-out;
+            visibility: visible;
+        }
+    @media only screen and (max-width: 992px) {
+        #downloadBtn{
+            display: none;
+        }
+    }
+
 }
 .shadow-cus{
     box-shadow: 2px 3px 8px 1px rgba(200,200,200,.1) !important;

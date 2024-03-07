@@ -1,11 +1,13 @@
 
+let downloadBtn = null;
+let downloadBtnClose = null;
+console.log(downloadBtnClose);
 function hidePreloader(){
     document.querySelector('.preloader').classList.add('LoaderHide');
 }
 Fancybox.bind('[data-fancybox="gallery"]', {
     // Your custom options for a specific gallery
 });
-
 
 
 function showSingleMovie(Movie){
@@ -18,6 +20,17 @@ function showSingleMovie(Movie){
         let template = Handlebars.compile(data);
         template = template({Movie : Movie})
         document.getElementById('single_page').innerHTML = template;
+        downloadBtn = document.getElementById('downloadBtn');
+        downloadBtn.addEventListener("click", () => {
+            console.log('123');
+            document.getElementById('download-overlay').classList.add('download-overlay-show');
+            downloadBtnClose = document.getElementById('downloadBtnClose');
+            downloadBtnClose.addEventListener('click', () => {
+                document.getElementById('download-overlay').classList.remove('download-overlay-show');
+            })
+
+        })
+
     })
 }
 

@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffbca8e1-7bc4-41c5-8cd4-8c34a9f502ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/component/hbs/single_page_demo.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/browse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/browse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/hbs/list_movies.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/list_movies.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/hbs/single_page.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/component/hbs/single_page.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/stylesheets/pages/_single.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,28 +41,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/work/laragon/www/Moviein/assets/js&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/work/laragon/www/Moviein/component/hbs",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\laragon\www\Moviein\component\hbs" />
       <recent name="E:\work\laragon\www\Moviein\assets\js" />
       <recent name="E:\work\laragon\www\Moviein\resource\stylesheets" />
       <recent name="E:\work\laragon\www\Moviein\resource\stylesheets\pages" />
       <recent name="E:\work\laragon\www\Moviein\component" />
-      <recent name="E:\work\laragon\www\moviein\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\laragon\www\moviein\component\hbs" />
@@ -102,7 +104,8 @@
       <workItem from="1709105893845" duration="2885000" />
       <workItem from="1709283925903" duration="11573000" />
       <workItem from="1709447296961" duration="3063000" />
-      <workItem from="1709525864050" duration="5297000" />
+      <workItem from="1709525864050" duration="14375000" />
+      <workItem from="1709787017917" duration="10680000" />
     </task>
     <servers />
   </component>
