@@ -2,6 +2,16 @@
 let downloadBtn = null;
 let downloadBtnClose = null;
 console.log(downloadBtnClose);
+
+function bodyScroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.nav-scroller').classList.add('attachTop');
+    } else {
+        document.querySelector('.nav-scroller').classList.remove('attachTop');
+    }
+}
+
+document.addEventListener('scroll',bodyScroll);
 function hidePreloader(){
     document.querySelector('.preloader').classList.add('LoaderHide');
 }
