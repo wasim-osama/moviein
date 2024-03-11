@@ -24,6 +24,7 @@ function pagination(){
 
 
     let html = '';
+    let htmlRes = '';
     let pageLi = 1;
     html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">< Previous</a></li>`;
 
@@ -75,6 +76,16 @@ function pagination(){
     paginationContent.innerHTML = html;
     console.log(pageLi);
 
+    if (window.innerWidth < 900) {
+        htmlRes += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button"><</a></li>`;
+        htmlRes += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-danger px-4 py-2 bg-danger" role="button">`+currentPage+`</a></li>`;
+        htmlRes += `<li class="page-item"><a onclick="gotoPage(`+(currentPage + 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2 cursor" role="button">></a></li>`;
+
+
+        paginationContent.innerHTML = htmlRes;
+    }
+
+
 }
 function gotoPage(page){
     pageNo = page;
@@ -120,6 +131,7 @@ function getFilteredMoviesData() {
         genreVal = genre.value,
         orderByVal = orderBy.value,
         ratingsVal = ratings.value;
+    console.log(qualityVal);
     fetch(window.api_url+'/api/list_movies.php?page='+pageNo+'&quality='+qualityVal+'&genre='+genreVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal+'&query_term='+query).then(res => {
         if (!res.ok){
             throw Error;
@@ -127,7 +139,7 @@ function getFilteredMoviesData() {
         return res.json();
     }).then(res => {
         hidePreloader();
-        console.log(res);
+        console.log(res.data);
         const Movies = res.data.movies;
         browseMovieData = res.data;
         showMovies(Movies);

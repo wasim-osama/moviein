@@ -12,6 +12,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto Serif", Serif;
+  overflow-x: hidden;
 }
 body{
   background-color: var(--primary) !important;
@@ -74,11 +75,23 @@ body{
 .bg-trans-black{
   background-color: rgb(0 ,0 , 0 , 0.5) !important;
 }
-.w-90{
-  width: 90%!important;
+.w-80{
+  width: 80%!important;
 }
 
 
 .LoaderHide{
   display: none!important;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:  #ffffff;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color:  #ffffff;
 }
