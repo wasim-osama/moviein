@@ -81,6 +81,10 @@
   max-width: 300px;
   width: 100%;
 }
+.side-img{
+  animation: movieImgY  6s infinite linear;
+}
+
 
 @media only screen and (max-width: 1000px) {
   #side-img{
@@ -92,5 +96,19 @@
   .rating-info-zone{
     width: 100%;
     margin: auto;
+  }
+}
+@keyframes movieImgY {
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(30px);
+  }
+  75%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(0);
   }
 }

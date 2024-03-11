@@ -36,8 +36,11 @@
           .nav-hov,.nav-hov-active{
             display: none;
           }
-          border-bottom: 1px solid red;
-          width: 25%;
+          .active-responsive{
+            background-color: #1a1d20!important;
+          }
+          width: 100%;
+          text-align: center;
         }
       }
     }
@@ -54,4 +57,7 @@
 }
 .search-form{
   display: none;
+}
+.active-responsive{
+  background-color: transparent;
 }

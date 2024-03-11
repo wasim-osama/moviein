@@ -12,21 +12,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-muted">
                     <li class="nav-item px-3 mx-2 position-relative">
-                        <a class="nav-link active" href="/">Home</a>
+                        <a class="nav-link active rounded-4" id="home-active" href="/">Home</a>
                         <div class="nav-hov position-absolute start-0 bg-danger rounded-3" id="home-nav"></div>
 
                     </li>
                     <li class="nav-item px-3 mx-2 position-relative">
-                        <a class="nav-link active" href="/browse.php">Browse</a>
+                        <a class="nav-link active rounded-4" id="browse-active" href="/browse.php">Browse</a>
                         <div class="nav-hov position-absolute start-0 bg-danger rounded-3" id="browse-nav"></div>
                     </li>
                     <li class="nav-item px-3 mx-2 position-relative">
-                        <a class="nav-link active" href="/recent.php">Recent Movies</a>
+                        <a class="nav-link active rounded-4" id="recent-active" href="/recent.php">Recent Movies</a>
                         <div class="nav-hov position-absolute start-0 bg-danger rounded-3" id="recent-nav"></div>
 
                     </li>
                     <li class="nav-item px-3 mx-2 position-relative">
-                        <a class="nav-link active" href="/alltime.php">All Time Blockbusters</a>
+                        <a class="nav-link active rounded-4" id="popular-active" href="/alltime.php">All Time Blockbusters</a>
                         <div class="nav-hov position-absolute start-0 bg-danger rounded-3" id="popular-nav"></div>
 
                     </li>

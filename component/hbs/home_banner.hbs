@@ -18,7 +18,9 @@
                             <div class="text-white-50">&#x2022;</div>
                             <div class="">
                                 {{#each Movie.genres}}
-                                    <span class="badge bg-success fw-normal">{{this}}</span>
+                                    {{#if (ifCond @index '<' '4')}}
+                                        <span class="badge bg-success fw-normal">{{this}}</span>
+                                    {{/if}}
                                 {{/each}}
                             </div>
                         </div>
@@ -31,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4" id="side-img">
-                    <div class="card-custom position-relative text-light ms-auto">
+                    <div class="card-custom position-relative text-light ms-auto side-img">
                         <div class="image w-100 h-100">
                             <img src="https://www1.yts.nz{{Movie.large_cover_image}}" alt="" class="w-100 h-100">
                         </div>

@@ -32,7 +32,7 @@
             <!--Search-bar end here-->
             <!--filter-custom starts here-->
             <div class="row">
-                <div class="col-sm-3 col-6">
+                <div class="col-sm-4 col-6">
                     <div class="h5 pb-2">
                         Quality
                     </div>
@@ -44,7 +44,7 @@
                         <option value="720p">720p</option>
                     </select>
                 </div>
-                <div class="col-sm-3 col-6">
+                <div class="col-sm-4 col-6">
                     <div class="h5 pb-2">
                         Genre
                     </div>
@@ -56,19 +56,7 @@
                         <option value="adventure">Adventure</option>
                     </select>
                 </div>
-                <div class="col-sm-3 col-6">
-                    <div class="h5 pb-2">
-                        Year
-                    </div>
-                    <select class="form-select bg-dark text-light border-danger"
-                            aria-label="Default select example" id="year">
-                        <option disabled selected value>Select Specific year</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                    </select>
-                </div>
-                <div class="col-sm-3 col-6">
+                <div class="col-sm-4 col-6">
                     <div class="h5 pb-2">
                         Order By
                     </div>

@@ -1,5 +1,10 @@
 
 let PageNo = 0;
+let navbarToggler = document.querySelector('.navbar-toggler');
+
+navbarToggler.addEventListener('click', () => {
+    document.querySelector('.nav-scroller').classList.add('attachTop');
+});
 function getLastPart() {
     const parts = url.split('/');
     return parts.at(-1);
@@ -10,6 +15,7 @@ console.log(lastRoute);
 console.log('recent.php' === lastRoute)
 if ('recent.php' === lastRoute){
     document.getElementById('recent-nav').classList.add('nav-hov-active');
+    document.getElementById('recent-active').classList.add('active-responsive');
 }
 
 
@@ -39,7 +45,7 @@ function pagination(MovieData){
         pageLi++;
         html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">`+(currentPage - 1)+`</a></li>`;
     }
-    html += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-danger px-4 py-2 bg-success" role="button">`+currentPage+`</a></li>`;
+    html += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-danger px-4 py-2 bg-danger" role="button">`+currentPage+`</a></li>`;
     if (currentPage < (totalPage - 3)){
         if ((currentPage + 1) <= totalPage){
             pageLi++;

@@ -1,3 +1,9 @@
+let navbarToggler = document.querySelector('.navbar-toggler');
+
+navbarToggler.addEventListener('click', () => {
+    document.querySelector('.nav-scroller').classList.add('attachTop');
+});
+
 function showBanner(Movies){
     fetch('/component/hbs/home_banner.hbs').then(res => {
         if (!res.ok){
@@ -21,6 +27,7 @@ console.log(lastRoute);
 console.log('' === lastRoute)
 if ('' === lastRoute){
     document.getElementById('home-nav').classList.add('nav-hov-active');
+    document.getElementById('home-active').classList.add('active-responsive');
 }
 
 function hidePreloader(){

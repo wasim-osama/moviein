@@ -1,3 +1,4 @@
+let navbarToggler = document.querySelector('.navbar-toggler');
 
 let downloadBtn = null;
 let downloadBtnClose = null;
@@ -10,6 +11,11 @@ function bodyScroll() {
         document.querySelector('.nav-scroller').classList.remove('attachTop');
     }
 }
+
+navbarToggler.addEventListener('click', () => {
+    document.querySelector('.nav-scroller').classList.add('attachTop');
+    document.getElementById('popular-active').classList.add('active-responsive');
+});
 
 document.addEventListener('scroll',bodyScroll);
 function hidePreloader(){

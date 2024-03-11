@@ -2,7 +2,6 @@
 let browseInput = document.getElementById('browseInput'),
     quality = document.getElementById('quality'),
     genre = document.getElementById('genre'),
-    year = document.getElementById('year'),
     orderBy = document.getElementById('orderBy'),
     ratings = document.getElementById('ratings'),
     searchBtn = document.getElementById('searchBtn'),
@@ -17,7 +16,8 @@ let PageNo = 0;
 
 navbarToggler.addEventListener('click', () => {
     document.querySelector('.nav-scroller').classList.add('attachTop');
-})
+    document.getElementById('browse-active').classList.add('active-responsive');
+});
 function pagination(){
     let totalPage = Math.ceil(browseMovieData.movie_count / browseMovieData.limit);
     let currentPage = browseMovieData.page_number;
@@ -44,7 +44,7 @@ function pagination(){
         pageLi++;
         html += `<li class="page-item"><a onclick="gotoPage(`+(currentPage - 1)+`)" class="page-link bg-dark text-light border-danger px-4 py-2" role="button">`+(currentPage - 1)+`</a></li>`;
     }
-    html += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-danger px-4 py-2 bg-success" role="button">`+currentPage+`</a></li>`;
+    html += `<li class="page-item"><a onclick="gotoPage(`+ currentPage +`)" class="page-link text-light border-danger px-4 py-2 bg-danger" role="button">`+currentPage+`</a></li>`;
     if (currentPage < (totalPage - 3)){
         if ((currentPage + 1) <= totalPage){
             pageLi++;
@@ -118,10 +118,9 @@ function getFilteredMoviesData() {
     let query = browseInput.value.toLowerCase(),
         qualityVal = quality.value,
         genreVal = genre.value,
-        yearVal = year.value,
         orderByVal = orderBy.value,
         ratingsVal = ratings.value;
-    fetch(window.api_url+'/api/list_movies.php?page='+pageNo+'&sort_by=year&quality='+qualityVal+'&genre='+genreVal+'&year='+yearVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal+'&query_term='+query).then(res => {
+    fetch(window.api_url+'/api/list_movies.php?page='+pageNo+'&quality='+qualityVal+'&genre='+genreVal+'&order_by='+orderByVal+'&minimum_rating='+ratingsVal+'&query_term='+query).then(res => {
         if (!res.ok){
             throw Error;
         }
